@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/Navbar.jsx";
+import Navbar from "../Navbar/Navbar.jsx";
 import "./Homepage.css";
 
 export default function Homepage() {
