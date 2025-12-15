@@ -1,0 +1,79 @@
+.hp-hero{
+  --accent: #dc2626;
+  --accent-dark: #b91c1c;
+  padding: 4rem 1rem;
+  text-align: center;
+  /* subtle background image with a white overlay to keep the clean look */
+  background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.55)),
+              url('../assets/School_BG1.jpeg') center/cover no-repeat;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hp-hero h1{
+  margin: 0;
+  font-size: 2.25rem;
+  color: #000000;
+}
+.hp-sub{
+  margin-top: 0.6rem;
+  color: #000000;
+}
+.btn-primary{
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--accent);
+  color: #ffffff;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(220,38,38,0.08);
+}
+.btn-primary:hover{
+  background: var(--accent-dark);
+}
+.hp-main{
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  color: #0f172a;
+}
+.hp-section{
+  margin-bottom: 1.6rem;
+}
+.hp-section h2{
+  margin-bottom: 0.5rem;
+  color: #0f172a;
+}
+.hp-section p, .hp-section li{
+  color: #374151;
+}
+.hp-section h2::before{
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 20px;
+  background: var(--accent);
+  margin-right: 0.6rem;
+  vertical-align: middle;
+  border-radius: 3px;
+}
+.hp-footer{
+  text-align: center;
+  padding: 1.2rem;
+  color: #6b7280;
+  border-top: 1px solid #eef2f7;
+  background: #ffffff;
+}
+
+.hp-footer a{ color: var(--accent); text-decoration: none }
+
+
+/* small screens */
+@media (max-width: 720px){
+  .hp-hero h1{ font-size: 1.6rem }
+  .hp-main{ padding: 0 0.75rem }
+}
