@@ -1,11 +1,9 @@
 import React from "react";
-import Navbar from "../Navbar/Navbar.jsx";
 import "./Homepage.css";
 
 export default function Homepage() {
   return (
     <div>
-      <Navbar />
 
       <header id="home" className="hp-hero">
         <h1>Welcome to Our School</h1>

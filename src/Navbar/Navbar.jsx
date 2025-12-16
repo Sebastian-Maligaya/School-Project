@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+import logo from "../assets/SRCC_logo.png";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -7,7 +8,12 @@ export default function Navbar() {
   return (
     <nav className="sp-navbar">
       <div className="sp-container">
-        <div className="sp-brand">SRCC</div> 
+        <div className="sp-branding">
+          <div className="sp-logo">
+            <img src={logo} alt="SRCC logo" />
+          </div>
+          <div className="sp-brand">SRCC</div>
+        </div>
 
         <button
           className="sp-toggle"

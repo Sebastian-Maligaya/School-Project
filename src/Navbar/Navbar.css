@@ -73,6 +73,12 @@
   background: var(--accent-dark);
 }
 
+/* Logo sizing and spacing */
+.sp-branding{ display:flex; align-items:center; gap:0.25rem }
+.sp-logo{ display:flex; align-items:center; margin-right:0 }
+.sp-logo img{ height:40px; width:auto; display:block }
+.sp-brand{ margin-left:0 }
+
 /* Responsive */
 @media (max-width: 720px){
   .sp-toggle{ display: block }

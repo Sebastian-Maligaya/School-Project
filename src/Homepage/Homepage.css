@@ -1,12 +1,12 @@
 .hp-hero{
   --accent: #dc2626;
   --accent-dark: #b91c1c;
-  padding: 4rem 1rem;
+  padding: 6.5rem 1rem 5rem; /* larger top padding for a more prominent hero */
   text-align: center;
   /* subtle background image with a white overlay to keep the clean look */
   background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.55)),
-              url('../assets/School_BG1.jpeg') center/cover no-repeat;
-  min-height: 320px;
+              url('../assets/School_BG2.jpg') center/cover no-repeat;
+  min-height: 520px; /* increase overall hero height */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,12 +14,14 @@
 }
 .hp-hero h1{
   margin: 0;
-  font-size: 2.25rem;
+  font-size: 3.5rem; /* larger headline */
+  line-height: 1.05;
   color: #000000;
 }
 .hp-sub{
-  margin-top: 0.6rem;
+  margin-top: 0.8rem;
   color: #000000;
+  font-size: 1.125rem;
 }
 .btn-primary{
   display: inline-block;
@@ -74,6 +76,8 @@
 
 /* small screens */
 @media (max-width: 720px){
-  .hp-hero h1{ font-size: 1.6rem }
+  .hp-hero{ padding: 3.25rem 0.75rem; min-height: 320px }
+  .hp-hero h1{ font-size: 1.9rem }
+  .hp-sub{ font-size: 1rem }
   .hp-main{ padding: 0 0.75rem }
 }
