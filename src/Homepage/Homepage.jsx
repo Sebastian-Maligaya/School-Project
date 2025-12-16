@@ -27,18 +27,23 @@ export default function Homepage() {
           </p>
         </section>
 
-        <section id="classes" className="hp-section">
-          <h2>Featured Classes</h2>
+        <section id="Achievement" className="hp-section">
+          <h2>Achievement</h2>
           <ul>
-            <li>Mathematics — Grades 6–8</li>
-            <li>Computer Science — Introduction to Web Development</li>
-            <li>Art & Design — Creative Workshops</li>
+            <li>Achivement 1</li>
+            <li>Achivement 2</li>
+            <li>Achivement 3</li>
           </ul>
         </section>
 
-        <section id="admissions" className="hp-section">
-          <h2>Admissions</h2>
-          <p>Admissions open year-round. Contact our office for more information.</p>
+        <section id="Features" className="hp-section">
+          <h2>Features</h2>
+          <p>Our school Features </p>
+          <ul>
+           <li>Features 1</li>
+           <li>Features 2</li>
+           <li>Features 3</li>
+          </ul>
         </section>
 
         <section id="contact" className="hp-section">

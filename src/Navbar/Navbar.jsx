@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <nav className="sp-navbar">
       <div className="sp-container">
-        <div className="sp-brand">School Project</div>
+        <div className="sp-brand">SRCC</div> 
 
         <button
           className="sp-toggle"
@@ -19,10 +19,12 @@ export default function Navbar() {
 
         <ul className={`sp-links ${open ? "open" : ""}`}>
           <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
           <li><a href="#admissions">Admissions</a></li>
-          <li><a href="#classes">Classes</a></li>
-          <li><a href="#contact" className="sp-cta">Contact</a></li>
+          <li><a href="#Classes">Classes</a></li>
+          <li><a href="#News">News</a></li>
+          <li><a href="#Facilities">Facilities</a></li>
+          <li><a href="#Clubs">Clubs</a></li>
+          <li><a href="#contact" className="sp-cta">Log in</a></li>
         </ul>
       </div>
     </nav>
