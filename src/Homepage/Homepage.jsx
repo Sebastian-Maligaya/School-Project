@@ -6,9 +6,9 @@ export default function Homepage() {
     <div>
 
       <header id="home" className="hp-hero">
-        <h1>Welcome to Our School</h1>
+        <h1>Senator Renato "Compañero" Cayetano Memorial Science and Technology High School</h1>
         <p className="hp-sub">
-          A friendly, modern template to showcase classes, admissions, and events.
+          "HOME OF THE International CHAMPIONS"
         </p>
         <div>
           <a href="#admissions" className="btn-primary">Apply Now</a>

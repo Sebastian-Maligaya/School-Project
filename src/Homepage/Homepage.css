@@ -4,9 +4,9 @@
   padding: 6.5rem 1rem 5rem; /* larger top padding for a more prominent hero */
   text-align: center;
   /* subtle background image with a white overlay to keep the clean look */
-  background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.55)),
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.55)),
               url('../assets/School_BG2.jpg') center/cover no-repeat;
-  min-height: 520px; /* increase overall hero height */
+  min-height: 760px; /* increase overall hero height */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,25 +14,26 @@
 }
 .hp-hero h1{
   margin: 0;
-  font-size: 3.5rem; /* larger headline */
+  font-size: 4.7rem; /* larger headline */
   line-height: 1.05;
-  color: #000000;
+  color: #ffffff;
 }
 .hp-sub{
   margin-top: 0.8rem;
-  color: #000000;
-  font-size: 1.125rem;
+  color: #ffffff;
+  font-size: 3rem;
 }
 .btn-primary{
   display: inline-block;
   margin-top: 1rem;
   background: var(--accent);
   color: #ffffff;
-  padding: 0.6rem 1rem;
+  padding: 0.7rem 2rem;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
   box-shadow: 0 6px 18px rgba(220,38,38,0.08);
+  font-size: 1.3rem;
 }
 .btn-primary:hover{
   background: var(--accent-dark);
@@ -80,4 +81,12 @@
   .hp-hero h1{ font-size: 1.9rem }
   .hp-sub{ font-size: 1rem }
   .hp-main{ padding: 0 0.75rem }
+}
+
+.sp-brand{
+  font-size: 30px;
+}
+
+.sp-links li a{
+  font-size: 16px;
 }

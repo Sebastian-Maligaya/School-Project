@@ -4,14 +4,16 @@
   background: #ffffff;
   color: #0f172a;
   border-bottom: 1px solid #e6e9ef;
+  
 }
 .sp-container{
-  max-width: 1100px;
-  margin: 0 auto;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.75rem 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 .sp-brand{
   font-weight: 700;
