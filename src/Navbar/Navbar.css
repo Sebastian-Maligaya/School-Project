@@ -4,6 +4,10 @@
   background: #ffffff;
   color: #0f172a;
   border-bottom: 1px solid #e6e9ef;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(15,23,42,0.06);
   
 }
 .sp-container{
