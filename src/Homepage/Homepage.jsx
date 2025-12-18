@@ -16,7 +16,7 @@ export default function Homepage() {
       </header>
 
       <main className="hp-main">
-      <section id="about" className="hp-section">
+        <section id="about" className="hp-section">
           <div className="hp-about-grid">
             <div className="hp-left">
               <h2>About our School</h2>
@@ -42,28 +42,56 @@ export default function Homepage() {
             </div>
 
             <div className="hp-right">
-              <img className = "about-img" src="https://cdn.britannica.com/19/148619-004-113E7353.jpg" alt="School placeholder" />
+              <img className="about-img" src="https://cdn.britannica.com/19/148619-004-113E7353.jpg" alt="School placeholder" />
             </div>
           </div>
 
-      </section>
+        </section>
 
-        <section id="Achievement" className="hp-section">
-          <h2>Achievement</h2>
-          <ul>
-            <li>Achivement 1</li>
-            <li>Achivement 2</li>
-            <li>Achivement 3</li>
-          </ul>
+        <section id="programs" className="hp-section">
+
+          <div id ="program-page-desc"className="hp-section">
+            <h1>Our programs</h1>
+           <p>We offer a diverse range of programs designed to nurture every aspect of your child's development.</p>
+          </div>
+          
+          <div className="hp-programs-gridcards">
+            <div className="card">
+            <div className="icon">★</div>
+            <span className="tag">Random</span>
+            <h3 className="title">Card Title</h3>
+            <p className="description">
+              This is a short description inside the card. You can put any text here.
+            </p>
+          </div>
+
+          <div className="card">
+            <div className="icon">⚙</div>
+            <span className="tag">Sample</span>
+            <h3 className="title">Another Card</h3>
+            <p className="description">
+              Cards will automatically move to the next row if space runs out.
+            </p>
+          </div>
+
+          <div className="card">
+            <div className="icon">💡</div>
+            <span className="tag">Idea</span>
+            <h3 className="title">Third Card</h3>
+            <p className="description">
+              Flexbox makes layouts responsive without extra work.
+            </p>
+          </div>
+          </div>
         </section>
 
         <section id="Features" className="hp-section">
           <h2>Features</h2>
           <p>Our school Features </p>
           <ul>
-           <li>Features 1</li>
-           <li>Features 2</li>
-           <li>Features 3</li>
+            <li>Features 1</li>
+            <li>Features 2</li>
+            <li>Features 3</li>
           </ul>
         </section>
 
