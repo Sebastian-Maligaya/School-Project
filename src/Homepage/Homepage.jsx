@@ -85,14 +85,43 @@ export default function Homepage() {
           </div>
         </section>
 
-        <section id="Features" className="hp-section">
+        <section id="features" className="hp-section hp-gallery">
           <h2>Features</h2>
-          <p>Our school Features </p>
-          <ul>
-            <li>Features 1</li>
-            <li>Features 2</li>
-            <li>Features 3</li>
-          </ul>
+          <p>Explore our campus and activities.</p>
+
+          <div className="gallery-grid">
+            <article className="gallery-item">
+              <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1200&auto=format&fit=crop&s=1a1a1a" alt="Students in science lab" />
+              <div className="overlay">
+                <h3>Science Lab</h3>
+                <p>Hands-on experiments and research</p>
+              </div>
+            </article>
+
+            <article className="gallery-item">
+              <img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?q=80&w=1200&auto=format&fit=crop&s=2b2b2b" alt="Sports activity" />
+              <div className="overlay">
+                <h3>Sports</h3>
+                <p>Teamwork and physical development</p>
+              </div>
+            </article>
+
+            <article className="gallery-item">
+              <img src="https://images.unsplash.com/photo-1523580494863-6e55d7f7a9b0?q=80&w=1200&auto=format&fit=crop&s=3c3c3c" alt="Library and students reading" />
+              <div className="overlay">
+                <h3>Library</h3>
+                <p>Quiet space for study and research</p>
+              </div>
+            </article>
+
+            <article className="gallery-item">
+              <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=1200&auto=format&fit=crop&s=4d4d4d" alt="Campus building" />
+              <div className="overlay">
+                <h3>Campus</h3>
+                <p>Modern facilities and green spaces</p>
+              </div>
+            </article>
+          </div>
         </section>
 
         <section id="contact" className="hp-section">
