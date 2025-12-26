@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Homepage.css";
 
 export default function Homepage() {
@@ -11,7 +12,7 @@ export default function Homepage() {
           "HOME OF THE International CHAMPIONS"
         </p>
         <div>
-          <a href="#admissions" className="btn-primary">Apply Now</a>
+          <Link to="/admissions" className="btn-primary">Apply Now</Link>
         </div>
       </header>
 

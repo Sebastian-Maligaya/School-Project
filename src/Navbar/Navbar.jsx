@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../assets/SRCC_logo.png";
 
@@ -8,6 +9,7 @@ export default function Navbar() {
   return (
     <nav className="sp-navbar">
       <div className="sp-container">
+        
         <div className="sp-branding">
           <div className="sp-logo">
             <img src={logo} alt="SRCC logo" />
@@ -24,8 +26,8 @@ export default function Navbar() {
         </button>
 
         <ul className={`sp-links ${open ? "open" : ""}`}>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#admissions">Admissions</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/admissions">Admissions</Link></li>
           <li><a href="#Classes">Classes</a></li>
           <li><a href="#News">News</a></li>
           <li><a href="#Facilities">Facilities</a></li>
