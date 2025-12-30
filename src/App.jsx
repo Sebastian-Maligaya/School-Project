@@ -6,15 +6,7 @@ import Navbar from './Navbar/Navbar'
 import Admissionpage from './AdmissionPage/Admissionpage'
 
 function App() {
-  return (
-    <>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/admissions" element={<Admissionpage />} />
-      </Routes>
-    </>
-  )
+  return <div>App OK</div>
 }
 
 export default App
