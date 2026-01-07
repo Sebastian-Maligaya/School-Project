@@ -29,7 +29,7 @@ export default function Navbar() {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/admissions">Admissions</Link></li>
           <li><a href="#Classes">Classes</a></li>
-          <li><a href="#News">News</a></li>
+          <li><Link to="/achievements">Achievements</Link></li>
           <li><a href="#Facilities">Facilities</a></li>
           <li><a href="#Clubs">Clubs</a></li>
           <li><a href="#contact" className="sp-cta">Log in</a></li>
