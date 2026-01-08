@@ -7,7 +7,7 @@ export default function Achievements() {
         <div>
           
                
-            <div right className="achievements-page">
+            <div className="achievements-page">
              <header>
               <h1>ACHIEVEMENTS</h1>
              </header>
@@ -42,7 +42,7 @@ export default function Achievements() {
           </div>
           
 
-          <div right className="achievements-list">
+          <div className="achievements-list">
              <header>BRIGADA ESKWELA</header>
             <ul>
                 <p>2020</p>
