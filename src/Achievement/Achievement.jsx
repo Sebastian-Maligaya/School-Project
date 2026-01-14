@@ -8,13 +8,14 @@ export default function Achievements() {
           
                
             <div className="achievements-page">
-             <header>
+             <header className="head achievements-header">
               <h1>ACHIEVEMENTS</h1>
              </header>
             </div>
         
             <div className="achievements-list">
-             <header>BRIGADA ESKWELA</header>
+             <header className="head brigada-header">
+                BRIGADA ESKWELA</header>
             <ul>
                 <p>2020</p>
                 <li>1st Place - Best Brigada Eskwela Implementer - Division Level (Medium School Category)</li>

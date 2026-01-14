@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./accordion.css";
+import "./AdmissionPage.css";
 
 const sections = [
   "THE SCHOOL'S ADMISSION POLICY",
