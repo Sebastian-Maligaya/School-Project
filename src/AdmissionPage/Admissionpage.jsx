@@ -1,8 +1,13 @@
 import React from 'react'
 import "../Homepage/Homepage.css"
 import StrandCard from '../Homepage/Card';
+import { useState } from "react";
+import "./accordion.css";
+import Accordion from "./accordion.jsx";
+
 
 export default function Admissionpage() {
+
 	return (
 		<div className="admission-page">
             <header>
@@ -85,6 +90,9 @@ export default function Admissionpage() {
                  This is to announce on the field of Admission and Screening for Senator Renato "Compañero" Cayetano Memorial Science and Technology High School for incoming Grade 7 students under Science, Technology, and Engineering (STE) Program --- 
               </p>
               
+              <Accordion />
+
+
               </div>
               <div className='GUIDELINES FOR ADMISSION IN SCIENCE, TECHNOLOGY, AND ENGINEERING (STE) Program in Junior High School specifically for Incoming Grade 7 Students S.Y. 2021-2022'>
               <h3>GUIDELINES FOR ADMISSION IN SCIENCE, TECHNOLOGY, AND ENGINEERING (STE) Program in Junior High School specifically for Incoming Grade 7 Students S.Y. 2021-2022</h3>
@@ -129,7 +137,9 @@ export default function Admissionpage() {
               </div>
 
               {/* DITO YUNG CONTENT NG GUIDELINES */}
+              
 
+              <Accordion />
               
              
               
