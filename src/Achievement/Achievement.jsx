@@ -1,10 +1,11 @@
 import React from 'react'
 import "../Homepage/Homepage.css"
 import StrandCard from '../Homepage/Card';
+import "./Achievement.css";
 
 export default function Achievements() {
     return (
-        <div>
+        <div className="achievement-container">
           
                
             <div className="achievements-page">
@@ -12,9 +13,11 @@ export default function Achievements() {
               <h1>ACHIEVEMENTS</h1>
              </header>
             </div>
-        
-            <div className="achievements-list">
+
+            <div className="achievements-title">
              <header>BRIGADA ESKWELA</header>
+             </div>
+             <div className="achievements-list"> 
             <ul>
                 <p>2020</p>
                 <li>1st Place - Best Brigada Eskwela Implementer - Division Level (Medium School Category)</li>
@@ -42,8 +45,10 @@ export default function Achievements() {
           </div>
           
 
-          <div className="achievements-list">
+           <div className="achievements-title">
              <header>BRIGADA ESKWELA</header>
+             </div>
+             <div className="achievements-list"> 
             <ul>
                 <p>2020</p>
                 <li>1st Place - Best Brigada Eskwela Implementer - Division Level (Medium School Category)</li>
@@ -69,10 +74,19 @@ export default function Achievements() {
             </ul>
             </div>
 
+            <div className="covid-19">
+                <header>COVID-19</header>
+
+            </div>    
+
             <div right className="Performancess">
                 <header>PERFORMANCES</header>
                  <h1>YUNG MGA SAYAW NAYIN</h1>
-                 <h2>YUNG MGA SAYAW NAYIN</h2>
+                 
+            </div>
+            <div right className="Performancess">
+                 <h1>YUNG MGA SAYAW NAYIN</h1>
+                 
             </div>
 
           

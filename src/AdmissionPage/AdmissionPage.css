@@ -1,0 +1,265 @@
+
+.admission-header {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.admission-header h1{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admission-header h1 {
+  font-size: 3.5rem;
+  color: #1b58e9;
+  margin: 0 0 1rem;
+  font-weight: 700;
+  font-family: 'Inter', system-ui, sans-serif;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-align: center; 
+  padding-top: 95px;
+  padding-bottom: 25px;
+}
+
+.admission-header h2 {
+  font-size: 2rem;
+  color: #5800fa;
+  margin: 0 0 0.001rem;
+  font-weight: 500;
+  font-family: 'Inter', system-ui, sans-serif;
+  letter-spacing: 0.3px;
+  text-align: center; 
+  padding-bottom: 15px;
+}
+
+.admission-header p {
+  font-size: 1rem;
+  color: #333;
+  margin: 0 0 1.5rem;
+  font-weight: 400;
+  font-family: 'Inter', system-ui, sans-serif;
+  letter-spacing: 0.2px;
+  text-align: center; 
+  padding-bottom: 50px;
+}
+
+.admission-table {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  justify-content: center;
+}
+
+.admission-header table {
+  width: 50px;
+  color: #5800fa;
+  border-collapse: separate;
+  border-spacing: 90px 0px;
+  justify-content: center;
+  
+}
+
+.admission-header th.number {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 10px; 
+  color: #5800fa;
+  font-style: times-new-roman;
+  min-width: 500px;
+  justify-content: center;
+  
+}
+
+
+
+.admission-header td.label {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 10px;
+  border: 1px solid #ffffff;
+  color: white;
+  background-color: #ffffff;
+  font-style: times-new-roman;
+}
+
+.btn-primary {
+  background-color: #1b58e9;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+  
+
+.admission-question.header { 
+  font-size: 2.5rem;
+  color: #1b58e9;
+  margin: 0 0 1rem;
+  font-weight: 600;
+  font-family: 'Inter', system-ui, sans-serif;
+  letter-spacing: 0.3px;
+  text-align: center; 
+  padding-top: 15rem;
+  padding-bottom: 7rem;
+}
+
+.admission-questions h2 {
+  font-size: 2rem;
+  color: #1b58e9;
+  margin: 0 0 1rem;
+  font-weight: bold;
+  font-family: 'Inter', system-ui, sans-serif;
+  letter-spacing: 0.3px;
+  text-align: center; 
+  padding-bottom: 3rem;
+  padding-top: 10rem;
+}
+
+.admission-questions ol {
+  font-size: 1rem;
+  color: #333;
+  margin: 0 0 2rem;
+  font-weight: 400;
+  font-family: 'Inter', system-ui, sans-serif;
+  letter-spacing: 0.2px;
+  padding-bottom: 60px;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.admission-questions li {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  font-weight: bold;
+  padding: 0rem;
+}
+
+.admission-questions li p {
+  font-weight: normal;
+  font-size: 1rem;
+  padding: 0rem;
+  margin-top: 0;
+}   
+
+.JUNIOR-HIGH-SCHOOL h3 {
+  font-size: 2.5rem;    
+  color: #1b58e9;
+  margin: 0 0 2rem;
+  font-weight: bold;
+  font-family: 'Inter', system-ui, sans-serif;
+  letter-spacing: 0.2px;
+  padding-top: 5rem;
+  padding-bottom: 1px;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  text-align: center;
+}
+
+.JUNIOR-HIGH-SCHOOL p {
+  font-size: 1rem;
+  color: #333;
+  margin: 0 0 2rem;
+  font-weight: 400;
+  font-family: 'Inter', system-ui, sans-serif;
+  letter-spacing: 0.2px;
+  padding-bottom: 60px;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  text-align: center;
+}
+
+
+.guidelibe-for-admission h3 {
+  font-size: 1.2rem;
+  color: #5800fa;
+  padding-bottom:20px;
+  padding-top:10px;
+}
+
+
+.title-senior {
+ font-size: 2.5rem;
+ color: #5800fa;
+ margin: 0 0 2rem;
+ font-weight: bold;
+ font-family: 'Inter', system-ui, sans-serif; 
+ letter-spacing: 0.2px;
+ padding-top: 9rem;
+ padding-bottom: 1px;
+ padding-left: 7rem;
+ padding-right: 7rem;
+ text-align: center;
+}
+
+
+
+
+.SENIOR-HIGH-SCHOOL h4 {
+  font-size: 1rem;
+  color: #333;
+  
+  font-weight: 400;
+  font-family: 'Inter', system-ui, sans-serif;
+  letter-spacing: 0.2px;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  text-align: center;
+}
+
+.SENIOR-HIGH-SCHOOL h5 {
+  font-size: 1rem;
+  color: #333;
+  margin: 0 0 0rem;
+  font-weight: 400;
+  font-family: 'Inter', system-ui, sans-serif;
+  letter-spacing: 0.2px;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  padding-bottom: 5rem;
+ 
+  text-align: center;
+}
+
+
+.hp-programs-gridcards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    place-items: center;
+    padding: 1rem 1rem 1rem;
+    font-size: 1px;
+    justify-content: center;
+    
+    
+  }
+
+  .card{
+    min-width: 5px;
+    min-width: 5px;
+  }
+
+.hp-footer{
+  text-align: center;
+  padding: 1.2rem;
+  color: #6b7280;
+  border-top: 1px solid #eef2f7;
+  background: #ffffff;
+}
+
+
+
+
+
+.hp-footer a{ color: var(--accent); text-decoration: none }

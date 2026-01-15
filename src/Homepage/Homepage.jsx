@@ -131,9 +131,17 @@ export default function Homepage() {
         </section>
       </main>
 
-      <footer className="hp-footer">
-        © {new Date().getFullYear()} School Project — All rights reserved
-      </footer>
+      <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        
+        
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 SRCMTHS. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
     </div>
   );
 }
