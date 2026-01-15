@@ -30,7 +30,8 @@ export default function Achievements() {
                 
                 <p>2018</p>
                 <li>1st Place - Best Brigada Eskwela Implementer - Division Level</li>
-                <li>5th Place - Best Brigada Eskwela Implementer - Regional Level</li> 
+                <li>5th Place - Best Brigada Eskwela Implementer - Regional Level</li>
+                <li>1st Place - Nutri-Jingle - Regional Level</li> 
 
                 <p>Mr. Judd Lawrence D. Guy-joco</p>
                 <li>Best Brigada Eskwela Coordinator - Secondary Level</li>
