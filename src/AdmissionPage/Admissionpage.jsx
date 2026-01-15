@@ -95,7 +95,7 @@ export default function Admissionpage() {
 
 
               </div>
-              <div className='GUIDELINES FOR ADMISSION IN SCIENCE, TECHNOLOGY, AND ENGINEERING (STE) Program in Junior High School specifically for Incoming Grade 7 Students S.Y. 2021-2022'>
+              <div className='guidelibe-for-admission'>
               <h3>GUIDELINES FOR ADMISSION IN SCIENCE, TECHNOLOGY, AND ENGINEERING (STE) Program in Junior High School specifically for Incoming Grade 7 Students S.Y. 2021-2022</h3>
 
               {/* DITO YUNG CONTENT NG GUIDELINES */}
@@ -133,14 +133,23 @@ export default function Admissionpage() {
                 </div>
               </div>
 
-              <div className='GUIDELINES FOR ADMISSION IN SCIENCE, TECHNOLOGY, AND ENGINEERING (STE) Program in Junior High School specifically for Incoming Grade 7 Students S.Y. 2021-2022'>
+              <div className='guide-line-for-admission-senior'>
               <h3>GUIDELINES FOR ADMISSION IN SCIENCE, TECHNOLOGY, AND ENGINEERING (STE) Program in Junior High School specifically for Incoming Grade 7 Students S.Y. 2021-2022</h3>
               </div>
 
+          
+
               {/* DITO YUNG CONTENT NG GUIDELINES */}
+
+               
               
 
               <Accordion />
+
+              <footer className="hp-footer">
+        ©     {new Date().getFullYear()} School Project — All rights reserved
+              </footer>
+               
               
              
               

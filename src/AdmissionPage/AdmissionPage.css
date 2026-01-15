@@ -124,7 +124,7 @@
 
 .JUNIOR-HIGH-SCHOOL h3 {
   font-size: 2.5rem;    
-  color: #1b58e9;
+  color: #5800fa;
   margin: 0 0 2rem;
   font-weight: bold;
   font-family: 'Inter', system-ui, sans-serif;
@@ -148,6 +148,41 @@
   padding-right: 7rem;
   text-align: center;
 }
+
+.guidelibe-for-admission h3 {
+  font-size: 1.2rem;
+  color: #5800fa;
+  padding-bottom:20px;
+  padding-top:10px;
+}
+
+.SENIOR-HIGH-SCHOOL h3 {
+ font-size: 1.1rem;
+ color: #5800fa;
+ padding: bottom 1.1em;
+ padding: top 1.1em;
+ font-weight: bold;
+}
+
+.guide-line-for-admission-senior h3 {
+ font-size: 1rem;
+ color: #5800fa;
+ padding: bottom 1.1em;
+ padding: top 1.1em;
+ font-weight: bold;
+}
+
+.hp-footer{
+  text-align: center;
+  padding: 1.2rem;
+  color: #6b7280;
+  border-top: 1px solid #eef2f7;
+  background: #ffffff;
+}
+
+.hp-footer a{ color: var(--accent); text-decoration: none }
+
+
 
 
 
