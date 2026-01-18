@@ -86,7 +86,6 @@
   text-align: center;
   padding-top: 10px;
   border: 1px solid #ffffff;
-  color: white;
   background-color: #ffffff;
   font-style: times-new-roman;
 }
@@ -101,6 +100,10 @@
   cursor: pointer;
   text-decoration: none;
 }
+
+.btn-primary:hover {
+  background-color: #154bb5;
+} 
   
 
 .admission-question.header { 
