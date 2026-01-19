@@ -3,6 +3,7 @@ import "../Homepage/Homepage.css"
 import StrandCard from '../Homepage/Card';
 import "./Facilities.css";
 import Facilities_Ground_Floor from "../assets/Facilities_Ground_Floor.png";
+import { Link } from 'react-router-dom';
 
 export default function Facilities() {
     return (
@@ -17,9 +18,9 @@ export default function Facilities() {
             <div className="facilities-list"> 
                 <table className='buttons-facility'>
                     <tr className='button-table-1'>
-                        <td><button className="facility-button">Lani Scholarships</button></td>
-                        <td><button className="facility-button">Library</button></td>
-                        <td><button className="facility-button">Audio Visual Room</button></td>
+                        <td><Link to="#"><button className="facility-button">Lani Scholarships</button></Link></td>
+                        <td><Link to="#"><button className="facility-button">Library</button></Link></td>
+                        <td><Link to="#"><button className="facility-button">Audio Visual Room</button></Link></td>
                     </tr>
                     <tr className='button-table-2'>
                         <td><button className="facility-button">Canteen</button></td>
