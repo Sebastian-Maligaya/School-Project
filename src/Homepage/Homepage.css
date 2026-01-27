@@ -1,19 +1,36 @@
 
+.hp-page {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+ 
 
-.hp-hero{
+.hp-hero {
   --accent: #dc2626;
   --accent-dark: #b91c1c;
-  padding: 6.5rem 1rem 5rem; /* larger top padding for a more prominent hero */
+
+  padding: 4rem 1rem;
+  margin-bottom: 6rem;
+
   text-align: center;
-  /* subtle background image with a white overlay to keep the clean look */
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.55)),
-              url('../assets/School_BG2.jpg') center/cover no-repeat;
-  min-height: 760px; /* increase overall hero height */
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.55)),
+    url('../assets/School_BG2.jpg') center/cover no-repeat;
+
+  min-height: 760px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .hp-hero h1{
   margin: 0;
   font-size: 4.7rem; /* larger headline */
@@ -52,21 +69,19 @@
 .hp-main #about{
   font-size: 25px;
   border-bottom: #374151 1px solid ;
+  padding-bottom: 4rem;   
 }
 
-.hp-main #about table{
-  border-collapse: separate;
-  border-spacing: 90px 0px;
-
-}
 
 .hp-right{
-  padding: 3rem;
+  padding-right: 1.5rem;
+  padding-left:  1.5rem;
   padding-top: 5rem;
 }
 .about-img{
   width: 600px;
-  height: 500px;
+  height: 600px;
+   transform: scaleY(1.4);
 }
 
 @media (max-width: 720px){
@@ -80,20 +95,47 @@
 .hp-section h2{
   margin-bottom: 0.5rem;
   color: #0f172a;
-}
-.hp-section p, .hp-section li{
-  color: #374151;
-}
-.hp-section h2::before{
-  content: "";
+   content: "";
   display: inline-block;
-  width: 8px;
-  height: 20px;
   background: var(--accent);
   margin-right: 0.6rem;
   vertical-align: middle;
   border-radius: 3px;
 }
+.hp-section p, .hp-section li{
+  color: #374151;
+}
+
+
+
+.lastp{
+  padding-bottom: 2rem;
+}
+
+
+
+
+.percentage-data td{
+  text-align: center;
+  padding: 0 4rem;
+}
+
+.percentage-data{
+  margin-top: 1rem;
+  font-size: 20px;
+}
+
+.percentage-data .number{
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.percentage-data .label{
+  color: #6b7280;
+  
+}
+
+
 .hp-footer{
   text-align: center;
   padding: 1.2rem;
@@ -105,7 +147,7 @@
 .hp-footer a{ color: var(--accent); text-decoration: none }
 
 
-/* small screens */
+
 @media (max-width: 720px){
   .hp-hero{ padding: 3.25rem 0.75rem; min-height: 320px }
   .hp-hero h1{ font-size: 1.9rem }
@@ -121,7 +163,17 @@
   gap: 2rem;
   align-items: flex-start;
 }
-.hp-left{ flex: 1; min-width: 0 }
+
+.hp-left{
+  flex: 1;
+  min-width: 250px;
+  padding-left: 1.5rem;
+  font-size: 20px;
+}
+
+
+
+.hp-left{ flex: 1; min-width: 250px; }
 .hp-right{ flex: 1; display:flex; justify-content:center; align-items:center }
 .hp-right img{ max-width:100%; height:auto; border-radius:8px; box-shadow:0 6px 18px rgba(15,23,42,0.06) }
 
@@ -145,11 +197,13 @@
 
 /* make the program description span full width above the cards */
 #program-page-desc{
+  padding-top: 3rem;
   align-items: center;
   text-align: center;
   margin-bottom: 1rem;
   font-size: 25px;
   padding-bottom: 2rem;
+  font-size: 20px;
 }
 
 

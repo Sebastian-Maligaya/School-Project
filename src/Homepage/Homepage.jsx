@@ -26,15 +26,15 @@ export default function Homepage() {
 
               <p>The Gear symbolizes technology and know-how in the modern society. The Building represents the City of Taguig of modern infrastructures whilst the White Duck represents Pateros. The Laurel leaves represent the dignity of man and serve as the emblem of victory, of a courageous flight of success.</p>
 
-              <p>This is the meaning of our seal, revere it, cherish it, and lives by it always.</p>
+              <p className="lastp">This is the meaning of our seal, revere it, cherish it, and lives by it always.</p>
 
-              <table>
-                <tr>
+              <table className="percentage-data-table">
+                <tr className="percentage-data">
                   <td className="number">1200+</td>
                   <td className="number">100+</td>
                   <td className="number">95%</td>
                 </tr>
-                <tr>
+                <tr className="percentage-data">
                   <td className="label">Students</td>
                   <td className="label">Teachers</td>
                   <td className="label">Success Rate</td>
@@ -53,7 +53,7 @@ export default function Homepage() {
 
           <div id ="program-page-desc"className="hp-section">
             <h1>Our programs</h1>
-           <p>We offer a diverse range of programs designed to nurture every aspect of your child's development.</p>
+           <p>We offer a diverse range of programs designed to nurture <br/>every aspect of your child's development.</p>
           </div>
           
           <div className="hp-programs-gridcards">
