@@ -1,20 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Homepage.css";
+import './stylesheet.css';
 
 export default function Homepage() {
   return (
     <div className="hp-page">
 
-      <header id="home" className="hp-hero">
-        <h1>Senator Renato "Compañero" Cayetano Memorial Science and Technology High School</h1>
+      <div id="home" className="hp-hero">
+        <p className="ABC">Senator Renato "Compañero" Cayetano Memorial Science and Technology High School</p>
         <p className="hp-sub">
           "HOME OF THE International CHAMPIONS"
         </p>
         <div>
           <Link to="/admissions" className="btn-primary">Apply Now</Link>
         </div>
-      </header>
+      </div>
 
       <main className="hp-main">
         <section id="about" className="hp-section">

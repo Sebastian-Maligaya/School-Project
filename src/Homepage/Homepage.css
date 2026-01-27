@@ -12,28 +12,39 @@
  
 
 .hp-hero {
-  --accent: #dc2626;
-  --accent-dark: #b91c1c;
-
-  padding: 4rem 1rem;
+    padding: 4rem 1rem;
   margin-bottom: 6rem;
-
   text-align: center;
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.55)),
-    url('../assets/School_BG2.jpg') center/cover no-repeat;
 
+  background: url('../assets/School_BG2.jpg') center/cover no-repeat;
   min-height: 760px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative; /* needed for overlay positioning */
 }
 
-.hp-hero h1{
+.hp-hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.6); /* darkness */
+  z-index: 1;
+}
+
+/* ensure hero content sits above the dark overlay */
+.hp-hero > * {
+  position: relative;
+  z-index: 2;
+}
+.hp-hero .ABC{
   margin: 0;
-  font-size: 4.7rem; /* larger headline */
+  font-family: 'FONTSPRINGDEMO-TheSeasonsRegular', serif;
+  font-weight: 300;
+  font-size: 4rem; /* larger headline */
   line-height: 1.05;
   color: #ffffff;
 }
@@ -62,7 +73,7 @@
 
 .hp-main{
   flex: 1 0 auto;
-  margin: 2rem 5rem 5rem;
+  margin: 2rem 10rem 10rem;
   color: #0f172a;
 }
 
@@ -76,12 +87,12 @@
 .hp-right{
   padding-right: 1.5rem;
   padding-left:  1.5rem;
-  padding-top: 5rem;
+  padding-top: 2.5rem;
 }
 .about-img{
   width: 600px;
   height: 600px;
-   transform: scaleY(1.4);
+   transform: scaleY(1.2);
 }
 
 @media (max-width: 720px){
@@ -150,7 +161,6 @@
 
 @media (max-width: 720px){
   .hp-hero{ padding: 3.25rem 0.75rem; min-height: 320px }
-  .hp-hero h1{ font-size: 1.9rem }
   .hp-sub{ font-size: 1rem }
   .hp-main{ padding: 0 0.75rem }
 }
@@ -186,14 +196,14 @@
 }
 
 
+
 .hp-programs-gridcards{
-  display: flex;
-  flex-wrap: wrap;          /* allows cards to move to next row */
-  gap: 20px;
-  justify-content: center;  /* centers the cards */
-  align-items: flex-start;
-  font-size: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
 }
+
 
 /* make the program description span full width above the cards */
 #program-page-desc{
@@ -209,13 +219,20 @@
 
 
 .card {
-  width: 250px;
-  padding: 20px;
+  padding: 2.5rem 1.5rem;
   background: #ffffff;
-  border-radius: 12px;
+  border-radius: 16px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  border: 1px solid #f0f4f8;
 }
+
+.card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(59, 130, 246, 0.12);
+}
+
 
 .icon {
   width: 50px;

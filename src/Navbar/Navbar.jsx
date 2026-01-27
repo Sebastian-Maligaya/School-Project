@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../assets/SRCC_logo.png";
 
+
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
