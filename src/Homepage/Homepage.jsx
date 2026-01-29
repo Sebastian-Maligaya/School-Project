@@ -2,6 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Homepage.css";
 import './stylesheet.css';
+import Badicon from "../assets/Badicon.png";
+import Bannericon from "../assets/Bannericon.png";
+import Bookicon from "../assets/Bookicon.png";
+import Monitoricon from "../assets/Monitoricon.png";
+
 
 export default function Homepage() {
   return (
@@ -59,29 +64,38 @@ export default function Homepage() {
           
           <div className="hp-programs-gridcards">
             <div className="card">
-            <div className="icon">★</div>
-            <span className="tag">Random</span>
-            <h3 className="title">Card Title</h3>
+            <div className="icon"><img src={Bookicon} alt="Bookicon" className="club-icon"/></div>
+            <span className="tag"></span>
+            <h3 className="title">Academic Excellence</h3>
             <p className="description">
-              This is a short description inside the card. You can put any text here.
+              Comprehensive curriculum covering all core subjects with advanced placement option
+            </p>
+          </div>
+
+          <div className="card">  
+            <div className="icon"><img src={Bannericon} alt="Bannericon" className="club-icon"/></div>
+            <span className="tag"></span>
+            <h3 className="title">Holistic Development</h3>
+            <p className="description">
+              Programs that promote character building, leadership, creativity, and emotional intelligence through co-curricular activities.
             </p>
           </div>
 
           <div className="card">
-            <div className="icon">⚙</div>
-            <span className="tag">Sample</span>
-            <h3 className="title">Another Card</h3>
+            <div className="icon"><img src={Monitoricon} alt="Monitoricon" className="club-icon"/></div>
+            <span className="tag"></span>
+            <h3 className="title">Technology & Innovation</h3>
             <p className="description">
-              Cards will automatically move to the next row if space runs out.
+              Hands-on learning in ICT, coding, robotics, and digital literacy to prepare students for a technology-driven future.
             </p>
           </div>
 
-          <div className="card">
-            <div className="icon">💡</div>
-            <span className="tag">Idea</span>
-            <h3 className="title">Third Card</h3>
+            <div className="card">
+            <div className="icon"><img src={Bannericon} alt="Bannericon" className="club-icon"/></div>
+            <span className="tag"></span>
+            <h3 className="title">4 Arts, Sports & Wellness</h3>
             <p className="description">
-              Flexbox makes layouts responsive without extra work.
+              Opportunities in visual and performing arts, athletics, and health programs that support physical fitness and self-expression.
             </p>
           </div>
           </div>
