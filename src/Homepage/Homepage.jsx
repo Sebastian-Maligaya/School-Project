@@ -1,11 +1,24 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link></link></link>
+
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Homepage.css";
-import './stylesheet.css';
 import Badicon from "../assets/Badicon.png";
 import Bannericon from "../assets/Bannericon.png";
 import Bookicon from "../assets/Bookicon.png";
 import Monitoricon from "../assets/Monitoricon.png";
+import locationicon from "../assets/locationicon.png";
+import phoneicon from "../assets/phoneicon.png";
+import emailicon from "../assets/emailicon.png";
+import HorizontalCard from "./HorizontalCard";
+import Gradhat from "../assets/Gradhat.png";
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link></link></link>
+
 
 
 export default function Homepage() {
@@ -27,6 +40,7 @@ export default function Homepage() {
           <div className="hp-about-grid">
             <div className="hp-left">
               <h2>About our School</h2>
+              <h3>About our school</h3>
 
               <p>The Sunrays stands for the light that illuminates your path in building a temple of immortal souls in the future generations; the Open Book means that anyone may come to engraft a branch of knowledge into the stock of wisdom. The Mountains and Sunrays represents hope of a new beginning.</p>
 
@@ -54,6 +68,17 @@ export default function Homepage() {
           </div>
 
         </section>
+
+         <div className="hat-line">
+         <section class="contact-section">
+          <div className="contact-title">
+            <span className="line"></span>
+            <h2><img src={Gradhat} alt="Graduation Hat" className="sp-brand"/></h2>
+            <span className="line"></span>
+            
+          </div>
+         </section>
+          </div>
 
         <section id="programs" className="hp-section">
 
@@ -140,19 +165,51 @@ export default function Homepage() {
           </div>
         </section>
 
-        <section id="contact" className="hp-section">
-          <h2>Contact</h2>
-          <p>Email: <a href="mailto:info@school.example">info@school.example</a></p>
+        <section class="contact-section">
+          <div class="contact-title">
+            <span class="line"></span>
+            <h2>Contact Information</h2>
+            <span class="line"></span>
+          </div>
+
+          <div className="contact-grid">
+
+            <HorizontalCard
+            icon={locationicon} 
+            title="Location"
+            content="Cayetano Sci-Tech Memorial High School, 1001 P. C. Valdez St., Taguig City" />
+
+            <HorizontalCard 
+            icon={phoneicon} 
+            title="Phone Number"
+               content="(02) 8765-4321" />
+
+            <HorizontalCard 
+            icon={emailicon} 
+            title="Email Address"
+               content="info@srcmthscayetano.edu.ph" />
+
+            <HorizontalCard 
+            icon={emailicon}
+            title="Website" 
+               content="www.srcmthscayetano.edu.ph" />
+                
+
+              
+          </div>
         </section>
+
+        
+
       </main>
 
-      <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
+      <footer className="footer">
+    <div className="container">
+      <div className="footer-content">
         
         
       </div>
-      <div class="footer-bottom">
+      <div className="footer-bottom">
         <p>&copy; 2025 SRCMTHS. All rights reserved.</p>
       </div>
     </div>

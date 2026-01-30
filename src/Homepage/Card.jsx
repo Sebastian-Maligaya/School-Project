@@ -1,3 +1,5 @@
+import "./Homepage.css";
+
 function StrandCard({ strand }) {
     return (
          <div className="card">

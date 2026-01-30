@@ -1,4 +1,5 @@
 
+
 .hp-page {
   font-family: 'Inter', system-ui, sans-serif;
   background-color: #f9fafb;
@@ -42,8 +43,8 @@
 }
 .hp-hero .ABC{
   margin: 0;
-  font-family: 'FONTSPRINGDEMO-TheSeasonsRegular', serif;
-  font-weight: 300;
+  font-family: 'Times New Roman', Times, serif; 
+  font-weight: lighter;
   font-size: 4rem; /* larger headline */
   line-height: 1.05;
   color: #ffffff;
@@ -51,7 +52,9 @@
 .hp-sub{
   margin-top: 0.8rem;
   color: #ffffff;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  font-family: 'Cinzel', serif;
+  font-weight: normal;
 }
 .btn-primary{
   display: inline-block;
@@ -79,7 +82,7 @@
 
 .hp-main #about{
   font-size: 25px;
-  border-bottom: #374151 1px solid ;
+  padding-top: 3rem;
   padding-bottom: 4rem;   
 }
 
@@ -103,16 +106,7 @@
 .hp-section{
   margin-bottom: 1.6rem;
 }
-.hp-section h2{
-  margin-bottom: 0.5rem;
-  color: #0f172a;
-   content: "";
-  display: inline-block;
-  background: var(--accent);
-  margin-right: 0.6rem;
-  vertical-align: middle;
-  border-radius: 3px;
-}
+
 .hp-section p, .hp-section li{
   color: #374151;
 }
@@ -174,7 +168,20 @@
   align-items: flex-start;
 }
 
-.hp-left{
+.hp-about-grid h2{
+   font-family: 'Bodoni Moda', serif;
+   font-size: 60px;
+   font-weight: normal;
+}
+
+.hp-about-grid h3{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 60px;
+  font-weight: normal;
+}
+
+
+.hp-left{ 
   flex: 1;
   min-width: 250px;
   padding-left: 1.5rem;
@@ -213,7 +220,6 @@
   margin-bottom: 1rem;
   font-size: 25px;
   padding-bottom: 2rem;
-  font-size: 20px;
 }
 
 
@@ -272,6 +278,7 @@
 .hp-gallery{
   margin: 4rem 0;
   padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 .hp-gallery .gallery-grid{
   display: grid;
@@ -370,7 +377,56 @@
   color: #0099ff;
 }
 
+/* TITLE WITH LINES */
+.sp-brand{
+  width: 100px;
+  font-size: 30px;
+}
 
+.contact-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  
+}
+
+.contact-title h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.contact-title .line {
+  flex: 1;
+  height: 1px;
+  background: #cbd5e1;
+  max-width: 100rem;
+}
+
+.contact-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 5fr));
+  gap: 30rem;
+  row-gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+.Horizontal-card {
+  display: flex;
+  border-radius: 12px;
+  padding: 1rem;
+  gap: 2rem;
+  
+}
+
+.Horizontal-card h1{
+  font-size: 1.2rem;
+
+}
 
 /* Footer bottom */
 .footer-bottom {
