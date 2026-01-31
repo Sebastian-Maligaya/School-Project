@@ -1,0 +1,76 @@
+.clubs-container{
+    text-align: center;
+    font-family:'cinzel';
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.clubs-title{
+    padding-top: 7rem;
+}
+
+.Page-Header{
+    padding-bottom: 6rem;
+}
+
+.clubs-title header{
+  font-size: 57.6px;
+  font-weight: 700;
+  font-family: 'cinzel';
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-align: center; 
+  background-image: linear-gradient(to bottom, #5800fa,  #00b8ff);
+  color: transparent;
+  background-size: contain;
+  background-clip: text;
+   
+}
+
+./* Main container */
+.clubs-list {
+  width: 100%;
+  text-align: center;
+ 
+}
+
+/* Department title */
+.clubs-list h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 30px 0 20px;
+  color: #5800fa;
+  padding-bottom: 8rem;
+}
+
+/* Flex container for icons */
+.department-icons {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;
+  gap: 300px;               /* space between icons */
+  flex-wrap: wrap;         /* wrap on small screens */
+  margin-bottom: 200px;
+}
+
+
+
+/* Button */
+.club-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+/* Icon */
+.club-icon {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
+

@@ -1,0 +1,26 @@
+/* Bodoni Moda – variable */
+@font-face {
+  font-family: 'Bodoni Moda';
+  src: url('./assets/fonts/BodoniModa-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 400 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bodoni Moda';
+  src: url('./assets/fonts/BodoniModa-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 400 900;
+  font-style: italic;
+}
+
+
+/* Monsieur La Doulaise */
+@font-face {
+  font-family: 'Monsieur La Doulaise';
+  src: url('./assets/fonts/MonsieurLaDoulaise-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+

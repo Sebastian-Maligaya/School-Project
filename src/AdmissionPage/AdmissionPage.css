@@ -1,45 +1,66 @@
+.admission-page {
+  padding: 4rem 6rem;
+  font-family: 'Cinzel', serif;
+}
+
 
 .admission-header {
-  background-color: #f9f9f9;
-  padding: 20px;
-  text-align: center;
-  justify-content: center;
+  padding-top: 3rem;
+  font-size: 2.5rem;
+  padding-bottom: 9rem;
+  position: relative;
+  
 }
 
-.admission-header h1{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-.admission-header h1 {
-  font-size: 3.5rem;
-  color: #1b58e9;
-  margin: 0 0 1rem;
+.admission-h {
+  font-size: 1.8rem;
   font-weight: 700;
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'cinzel';
   letter-spacing: 0.5px;
   text-transform: uppercase;
   text-align: center; 
-  padding-top: 95px;
-  padding-bottom: 25px;
+  background-image: linear-gradient(to bottom, #5800fa,  #00b8ff);
+  color: transparent;
+  background-size: contain;
+  background-clip: text;
+  
+}
+
+ .contact-title1 .admission-line1 {
+  display: block;              /* make span behave like a block */
+  height: 0.12rem;             /* line thickness */
+  width: 100%;                  /* allow it to shrink to max-width */
+  max-width: 600px;             /* change as needed */
+  margin: 0 auto;               /* centers it horizontally */
+  border-radius: 2px;           /* optional, make edges smooth */
+  background-image: linear-gradient(to bottom, #5800fa,  #00b8ff);
+}
+
+.admission-h h1{
+  padding-bottom: 0.1rem;
+  margin: 0%;
+}
+.h-2{
+padding-top: 4rem;
 }
 
 .admission-header h2 {
   font-size: 2rem;
-  color: #5800fa;
   margin: 0 0 0.001rem;
-  font-weight: 500;
-  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 600;
+  font-family: 'cinzel';
   letter-spacing: 0.3px;
   text-align: center; 
   padding-bottom: 15px;
+  background-image: linear-gradient(to bottom, #5800fa,  #00b8ff);
+  color: transparent;
+  background-size: contain;
+  background-clip: text;  
 }
 
 .admission-header p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #333;
   margin: 0 0 1.5rem;
   font-weight: 400;
@@ -64,39 +85,41 @@
   border-spacing: 90px 0px;
   justify-content: center;
   
+  
 }
 
 .admission-header th.number {
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Inter', system-ui, sans-serif;
   text-align: center;
   padding-bottom: 10px; 
-  color: #5800fa;
-  font-style: times-new-roman;
   min-width: 500px;
   justify-content: center;
+  background-image: linear-gradient(to bottom, #5800fa,  #00b8ff);
+  color: transparent;
+  background-size: contain;
+  background-clip: text;
   
 }
 
 
 
 .admission-header td.label {
-  font-size: 1rem;
-  font-weight: 500;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 5px;
   border: 1px solid #ffffff;
   background-color: #ffffff;
-  font-style: times-new-roman;
 }
 
 .btn-primary {
   background-color: #1b58e9;
+  margin: 0%;
   color: #ffffff;
-  padding: 10px 20px;
+  padding: 10px 25px;
   border: none;
-  border-radius: 5px;
-  font-size: 1rem;
+  border-radius: 1px;
+  font-size: 1.3rem;
   cursor: pointer;
   text-decoration: none;
 }
@@ -104,7 +127,14 @@
 .btn-primary:hover {
   background-color: #154bb5;
 } 
-  
+
+.admission-questions {
+  padding: 2.5rem 1.5rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 3px 2rem rgba(0, 0, 0, 0.06);
+  border: 2px solid #f0f4f8;
+}
 
 .admission-question.header { 
   font-size: 2.5rem;
@@ -118,6 +148,19 @@
   padding-bottom: 7rem;
 }
 
+
+ .contact-title-2 .admission-line-2 {
+  height: 0.12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2px;
+  background: #cbd5e1;
+  max-width: 100%;
+
+ 
+}
+
 .admission-questions h2 {
   font-size: 2rem;
   color: #1b58e9;
@@ -127,7 +170,7 @@
   letter-spacing: 0.3px;
   text-align: center; 
   padding-bottom: 3rem;
-  padding-top: 10rem;
+  padding-top: 1rem;
 }
 
 .admission-questions ol {
@@ -155,7 +198,20 @@
   font-size: 1rem;
   padding: 0rem;
   margin-top: 0;
-}   
+}
+
+.high-school {
+  padding-top: 4rem;
+}
+
+.JUNIOR-HIGH-SCHOOL-CONTAINER{
+   padding: 2.5rem 1.5rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 3px 2rem rgba(0, 0, 0, 0.06);
+  border: 2px solid #f0f4f8; 
+  
+}
 
 .JUNIOR-HIGH-SCHOOL h3 {
   font-size: 2.5rem;    
@@ -164,7 +220,7 @@
   font-weight: bold;
   font-family: 'Inter', system-ui, sans-serif;
   letter-spacing: 0.2px;
-  padding-top: 5rem;
+  padding-top: 2rem;
   padding-bottom: 1px;
   padding-left: 7rem;
   padding-right: 7rem;
@@ -200,13 +256,24 @@
  font-weight: bold;
  font-family: 'Inter', system-ui, sans-serif; 
  letter-spacing: 0.2px;
- padding-top: 9rem;
+ padding-top: 5rem;
  padding-bottom: 1px;
  padding-left: 7rem;
  padding-right: 7rem;
  text-align: center;
 }
 
+.SENIOR-HIGH-SCHOOL-CONTAINER{
+  padding-top: 4rem;
+}
+
+.SENIOR-HIGH-SCHOOL{
+  padding: 2.5rem 1.5rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 3px 2rem rgba(0, 0, 0, 0.06);
+  border: 2px solid #f0f4f8; 
+}
 
 
 
@@ -231,7 +298,7 @@
   letter-spacing: 0.2px;
   padding-left: 7rem;
   padding-right: 7rem;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
  
   text-align: center;
 }
@@ -245,13 +312,20 @@
     font-size: 1px;
     justify-content: center;
     
-    
   }
 
-  .card{
-    min-width: 5px;
-    min-width: 5px;
-  }
+  .card-2 {
+  padding: 2.5rem 1.5rem;
+  background: #ffffff;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  border: 1px solid #f0f4f8;
+  min-height: 17rem;
+}
+
+
 
 .hp-footer{
   text-align: center;

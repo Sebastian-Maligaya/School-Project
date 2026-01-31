@@ -1,6 +1,4 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link></link></link>
+
 
 import React from "react";
 import { Link } from "react-router-dom";
@@ -15,10 +13,6 @@ import emailicon from "../assets/emailicon.png";
 import HorizontalCard from "./HorizontalCard";
 import Gradhat from "../assets/Gradhat.png";
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link></link></link>
-
 
 
 export default function Homepage() {
@@ -28,7 +22,7 @@ export default function Homepage() {
       <div id="home" className="hp-hero">
         <p className="ABC">Senator Renato "Compañero" Cayetano Memorial Science and Technology High School</p>
         <p className="hp-sub">
-          "HOME OF THE International CHAMPIONS"
+          "HOME OF THE INTERNATIONAL CHAMPIONS"
         </p>
         <div>
           <Link to="/admissions" className="btn-primary">Apply Now</Link>
@@ -40,7 +34,7 @@ export default function Homepage() {
           <div className="hp-about-grid">
             <div className="hp-left">
               <h2>About our School</h2>
-              <h3>About our school</h3>
+
 
               <p>The Sunrays stands for the light that illuminates your path in building a temple of immortal souls in the future generations; the Open Book means that anyone may come to engraft a branch of knowledge into the stock of wisdom. The Mountains and Sunrays represents hope of a new beginning.</p>
 
@@ -89,7 +83,7 @@ export default function Homepage() {
           
           <div className="hp-programs-gridcards">
             <div className="card">
-            <div className="icon"><img src={Bookicon} alt="Bookicon" className="club-icon"/></div>
+            <div className="icon"><img src={Bookicon} alt="Bannericon" className="club-icon"/></div>
             <span className="tag"></span>
             <h3 className="title">Academic Excellence</h3>
             <p className="description">

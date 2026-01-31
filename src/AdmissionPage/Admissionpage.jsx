@@ -5,6 +5,15 @@ import { useState } from "react";
 import "./accordion.css";
 import "./AdmissionPage.css";
 import Accordion from "./accordion.jsx";
+import Badicon from "../assets/Badicon.png";
+import Bannericon from "../assets/Bannericon.png";
+import Bookicon from "../assets/Bookicon.png";
+import Monitoricon from "../assets/Monitoricon.png";
+import locationicon from "../assets/locationicon.png";
+import phoneicon from "../assets/phoneicon.png";
+import emailicon from "../assets/emailicon.png";
+import Gradhat from "../assets/Gradhat.png";
+import Microscopeicon from "../assets/microscopeicon.jpg";
 
 
 export default function Admissionpage() {
@@ -12,10 +21,21 @@ export default function Admissionpage() {
   return (
     <div className="admission-page">
       <header className="admission-header">
+        <div className='admission-h'>
         <h1>Admission</h1>
-        <h2>CAYETANO SCI-TECH ADMISSION AND SCREENING FOR INCOMING GRADE 7 AND GRADE 11</h2>
-        <p>To qualify for the Sen. Renato "Compañero" Memorial Science & Technology High School (SRCCMSTHS) admission test, the students must meet certain qualifications. </p>
+        </div>
 
+        
+        <section class="contact-admission-section">
+          <div class="contact-title1">
+            <span class="admission-line1"></span>
+          </div>
+        </section>
+        <div className='h-2'>
+        <h2>CAYETANO SCI-TECH ADMISSION AND SCREENING FOR INCOMING GRADE 7 AND GRADE 11</h2>
+        </div>
+        <p>To qualify for the Sen. Renato "Compañero" Memorial Science & Technology High School (SRCCMSTHS) admission test, the students must meet <br/> certain qualifications. </p>
+      
 
         <table className="admission-table">
           <tr>
@@ -35,6 +55,7 @@ export default function Admissionpage() {
 
       </header>
 
+      
 
 
       <div className="admission-questions">
@@ -95,7 +116,10 @@ export default function Admissionpage() {
 
         </ol>
       </div>
+      
 
+      <div className='high-school'>
+      <div className='JUNIOR-HIGH-SCHOOL-CONTAINER'>
       <div className='JUNIOR-HIGH-SCHOOL'>
         <h3>JUNIOR HIGH SCHOOL</h3>
         <p>
@@ -110,10 +134,10 @@ export default function Admissionpage() {
 
       <Accordion />
 
-
+     </div>
 
       
-
+      <div className='SENIOR-HIGH-SCHOOL-CONTAINER'>
       <div className='SENIOR-HIGH-SCHOOL'>
         <h3 className='title-senior'>SENIOR HIGH SCHOOL</h3>
         <h4>GUIDELINES FOR ADMISSION IN SCIENCE, TECHNOLOGY, AND ENGINEERING (STE) Program in Junior High School specifically for Incoming Grade 7 Students S.Y. 2021-2022</h4> 
@@ -121,37 +145,48 @@ export default function Admissionpage() {
         <div className="hp-programs-gridcards">
           <StrandCard
             strand={{
-              icon: "🔬",
+              icon :<img src={Microscopeicon} alt="Bannericon" className="club-icon"/>,
               tag: "STEM",
               title: "Science, Technology, Engineering, and Mathematics",
               description: "A rigorous program focusing on STEM disciplines."
             }}
           />
+          
+          
           <StrandCard
             strand={{
-              icon: "💼",
+              icon:<img src={Microscopeicon} alt="Bannericon" className="club-icon"/>,
               tag: "ABM",
               title: "Accountancy, Business, and Management",
               description: "Prepares students for careers in business and finance."
             }}
           />
+        
+          
           <StrandCard
             strand={{
-              icon: "🎭",
+              icon:<img src={Microscopeicon} alt="Bannericon" className="club-icon"/>,
               tag: "ICT",
               title: "Information and Communication Technology",
               description: "Develops critical thinking and communication skills."
             }}
           />
+
+           
+          
         </div>
-      </div>
+      
+      
 
       <Accordion />
 
+      </div>
 
 
 
 
+    </div>
+    </div>
     </div>
 
 

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../assets/SRCC_logo.png";
-import './stylesheet.css';
 
 
 export default function Navbar() {
