@@ -33,7 +33,7 @@ export default function Navbar() {
           <li><Link to="/achievements">Achievements</Link></li>
           <li><Link to="/facilities">Facilities</Link></li>
           <li><Link to="/clubs">Clubs</Link></li>
-          <li><a href="#contact" className="sp-cta">Log in</a></li>
+          <li><Link to="/sign">Log in</Link></li>
         </ul>
       </div>
     </nav>

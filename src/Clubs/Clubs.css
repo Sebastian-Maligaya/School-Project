@@ -26,7 +26,7 @@
    
 }
 
-./* Main container */
+/* Main container */
 .clubs-list {
   width: 100%;
   text-align: center;
@@ -35,11 +35,11 @@
 
 /* Department title */
 .clubs-list h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   margin: 30px 0 20px;
   color: #5800fa;
-  padding-bottom: 8rem;
+  padding-bottom: 7rem;
 }
 
 /* Flex container for icons */
@@ -47,9 +47,9 @@
   display: flex;
   justify-content: center; /* center horizontally */
   align-items: center;
-  gap: 300px;               /* space between icons */
+  gap: 250px;               /* space between icons */
   flex-wrap: wrap;         /* wrap on small screens */
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 
 
@@ -68,8 +68,8 @@
 
 /* Icon */
 .club-icon {
-  width: 300px;
-  height: 300px;
+  width: 265px;
+  height: 265px;
   object-fit: contain;
 }
 

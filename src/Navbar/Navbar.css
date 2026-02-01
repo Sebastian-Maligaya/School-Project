@@ -1,3 +1,4 @@
+
 .sp-navbar{
   --accent: #dc2626;
   --accent-dark: #b91c1c;
@@ -67,12 +68,12 @@
   font-weight: 500;
   font-family: sans-serif;
 }
-.sp-links li a:hover{
+.Sign li a:hover{
   background: #f3f4f6;
 }
 
 /* small CTA on the navbar (subtle red accent) */
-.sp-cta{
+.Sign{
   background: var(--accent);
   color: #fff !important;
   padding: 0.35rem 0.65rem;

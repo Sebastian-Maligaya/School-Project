@@ -2,7 +2,7 @@
 
 .hp-page {
   font-family: 'Inter', system-ui, sans-serif;
-  background-color: #f9fafb;
+  background-color: white;
   color: #1f2937;
   margin: 0;
   padding: 0;
@@ -24,7 +24,32 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative; /* needed for overlay positioning */
+  position: relative;
+}
+
+.hp-hero p {
+  opacity: 0;              
+  transform: translateY(20px); 
+  animation: fadeUp 1s ease-out forwards;
+}
+
+.hp-hero p:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.hp-hero p:nth-child(2) {
+  animation-delay: 0.4;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hp-hero::before {
@@ -32,11 +57,11 @@
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background-color: rgba(0,0,0,0.6); /* darkness */
+  background-color: rgba(0,0,0,0.6); 
   z-index: 1;
 }
 
-/* ensure hero content sits above the dark overlay */
+
 .hp-hero > * {
   position: relative;
   z-index: 2;
@@ -67,6 +92,11 @@
   font-weight: 600;
   box-shadow: 0 6px 18px rgba(220,38,38,0.08);
   font-size: 1.3rem;
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease-out forwards;
+  animation-delay: 0.7s; 
 }
 .btn-primary:hover{
   background: var(--accent-dark);
@@ -76,7 +106,6 @@
 
 .hp-main{
   flex: 1 0 auto;
-  margin: 2rem 10rem 10rem;
   color: #0f172a;
 }
 
@@ -86,11 +115,16 @@
   padding-bottom: 4rem;   
 }
 
+.hp-about-grid{
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 
 .hp-right{
   padding-right: 1.5rem;
   padding-left:  1.5rem;
-  padding-top: 2.5rem;
+  padding-top: 6rem;
 }
 .about-img{
   width: 600px;
@@ -105,6 +139,8 @@
 
 .hp-section{
   margin-bottom: 1.6rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .hp-section p, .hp-section li{
@@ -112,12 +148,60 @@
 }
 
 
-
 .lastp{
   padding-bottom: 2rem;
 }
 
+.Founder{
+  background-color: #5b85e7;
+  display: flex;
+  padding: 3rem;
+  height: 40rem;
 
+  
+}
+
+.left-Founder{
+  flex: 1;
+  width: 5px; 
+  padding-right: 8rem;
+  text-align: right;
+  padding-top: 6%;
+}
+
+.left-Founder h1{
+  color: white;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 60px;
+}
+
+
+.left-Founder p{
+  font-size: 1.3rem;
+  color: #ffffff;
+  font-weight: 400;
+  
+  
+}
+
+
+.right-founder{
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  width: 900px;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-founder img{
+  
+  width: 500px;
+
+  align-items: center;
+
+}
 
 
 .percentage-data td{
@@ -131,6 +215,7 @@
 }
 
 .percentage-data .number{
+  color: #5800fa;;
   font-weight: bold;
   font-size: 24px;
 }
@@ -139,6 +224,49 @@
   color: #6b7280;
   
 }
+
+.Vision-Mission{
+ display: flex;
+ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ padding: 1rem 1rem 4rem;
+ font-size: 1px;
+ justify-content: center;
+ gap: 2rem;
+ 
+}
+
+.card-vission{
+  padding: 2.5rem 4rem;
+  background: #ffffff;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #f0f4f8;
+  min-height: 25rem;
+  width: 40rem;
+}
+
+.Vissionicon{
+  width: 7rem;
+}
+
+.vission-title{
+  font-size: 1.5rem;
+}
+
+.vission-description{
+  font-size: 18px;
+  color: #4b5563;
+  font-family: 'Inter', system-ui, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.card-vission:hover{
+ transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(59, 130, 246, 0.12);
+}
+
 
 
 .hp-footer{
@@ -208,7 +336,7 @@
 }
 
 
-/* make the program description span full width above the cards */
+
 #program-page-desc{
   padding-top: 3rem;
   align-items: center;
@@ -221,6 +349,7 @@
 #program-page-desc h1{
   font-weight: 600;
 }
+
 
 
 
@@ -408,7 +537,8 @@
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 0rem;
+  padding-top: 3rem;
   
 }
 
@@ -421,7 +551,7 @@
   flex: 1;
   height: 1px;
   background: #cbd5e1;
-  max-width: 100rem;
+  max-width: 40rem;
 }
 
 .contact-grid{

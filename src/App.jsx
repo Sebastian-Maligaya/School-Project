@@ -7,6 +7,7 @@ import Admissionpage from './AdmissionPage/Admissionpage'
 import Achievements from './Achievement/Achievement'
 import Facilities from './Facilities/Facilities'
 import Clubs from './Clubs/Clubs'
+import Sign from './Sign/Sign'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/achievements' element={<Achievements />} />
         <Route path='/facilities' element={<Facilities />} />
         <Route path='/clubs' element={<Clubs />} />
+        <Route path='Sign' element={<Sign />} />
    
       </Routes> 
     </div>
