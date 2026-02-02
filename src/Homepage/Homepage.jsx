@@ -128,7 +128,7 @@ export default function Homepage() {
         </section> 
         <section className="Founder-2">
           <div className="right-founder-2">
-          <img src={Placeholder} className="Founder-image-2"/>
+          <img src={Placeholder} className="Founder-image"/>
           </div>
           <div className="left-Founder-2">
             <h1>George P. Tizon, Ed. D.</h1>
@@ -275,7 +275,7 @@ export default function Homepage() {
       </main>
 
       <footer className="footer">
-        <div className="container">
+        <div className="footer-box">
           <div className="footer-content">
 
 

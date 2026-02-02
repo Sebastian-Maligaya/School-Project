@@ -3,73 +3,64 @@
     margin: 0;
     padding: 0 8.5rem 0;
     box-sizing: border-box;
-}
-.achievements-page h1 {
-  font-size: 3rem;
-  color: #1b58e9;
-  margin: 0 0 1rem;
-  font-weight: 700;
-  font-family: 'Inter', system-ui, sans-serif;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  text-align: center; 
-  padding-top: 80px;
-  padding-bottom: 5rem;
-}
-
-.achievements-title header {
-    text-align: center;
-    font-size: 4rem;
-    color: #333;
-    margin-bottom: 2rem;
-    font-weight: 600;
     font-family: 'Inter', system-ui, sans-serif;
-} 
+}
 
-.achievements-list {
+.achievements-page{
+    font-size: 2rem;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: right;
-    gap: 2rem;
-    padding-right: 5rem;
-    padding-left: 5rem;
-    padding-bottom: 8rem;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 0rem;
 }
 
-.achievements-list ul {
-    list-style-type: disc;
-    margin-bottom: 3rem;
-    font-family: 'Inter', system-ui, sans-serif;
+.achievement{
+    margin: 0rem; 
 }
 
-.covid-19 header {
-    text-align: center;
-    font-size: 4rem;
-    color: #333;
-    margin-bottom: 2rem;
-    font-weight: 600;
-    font-family: 'Inter', system-ui, sans-serif;
+.div-line-achievement{
+    display: flex;
+    margin-right: 0;
+    margin-left: 0;
+    justify-content: center;
+    padding-bottom: 3rem;
+    
+    
 }
 
-.Performancess header {
-    font-size: 2.5rem;
-    color: #1b58e9;
-    margin: 0 0 1rem;
-    font-weight: 700;
-    font-family: 'Inter', system-ui, sans-serif;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: 80px;
-    padding-bottom: 5rem;
+.div-line-achievement header{
+    background-color: blue;
+    font-size: large;
+    width: 35rem;
+    height: 2px;
 }
 
-.Performancess h1 {
-  font-size: 2rem;
-  color: #333;
-  margin: 0 0 1rem;
-  font-weight: 500;
-  font-family: 'Inter', system-ui, sans-serif;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  text-align: center;
+.achievements-title{
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+
+    font-size: 3rem;
+}
+
+.first-achievement-container{
+    padding-bottom: 2rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 3rem;
+}
+
+.second-achievement-container{
+    padding-bottom: 2rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 3rem;
+}
+
+
