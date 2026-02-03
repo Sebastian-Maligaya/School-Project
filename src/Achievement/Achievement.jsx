@@ -18,96 +18,124 @@ export default function Achievements() {
                 <header></header>
             </div>
 
-            <div className="achievements-title">
-                <header>BRIGADA ESKWELA</header>
-            </div>
+            <div className='achievement-Aboxes'>
+                <div className='box-achievement-container'>
+                    <div className="achievements-title">
+                        <header>BRIGADA ESKWELA</header>
+                    </div>
 
-         
 
-            <div className='first-achievement-container'>
-                <div className="achievements-list-left">
-                    <ul>
-                        <p>2020</p>
-                        <li>1st Place - Best Brigada Eskwela Implementer - Division Level (Medium School Category)</li>
-                        <li>Regional Awardee</li>
 
-                        <p>Mr. Mark Anthony Galan</p>
-                        <li>Division Rank 1 - Best Brigada Eskwela Coordinator (Medium School Category)</li>
-                        <li>Regional Awardee - Brigada Eskwela Coordinator</li>
+                    <div className='first-achievement-container'>
+                        <div className="achievements-list-left">
+                            <ul>
+                                <p className='first-p'>2020</p>
+                                <li>1st Place - Best Brigada Eskwela Implementer - Division Level (Medium School Category)</li>
+                                <li>Regional Awardee</li>
 
-                        <p>2019</p>
-                        <li>2nd Place - Best Brigada Eskwela Implementer - Division Level</li>
+                                <p>Mr. Mark Anthony Galan</p>
+                                <li>Division Rank 1 - Best Brigada Eskwela Coordinator (Medium School Category)</li>
+                                <li>Regional Awardee - Brigada Eskwela Coordinator</li>
 
-                        <p>2018</p>
-                        <li>1st Place - Best Brigada Eskwela Implementer - Division Level</li>
-                        <li>5th Place - Best Brigada Eskwela Implementer - Regional Level</li>
+                                <p>2019</p>
+                                <li>2nd Place - Best Brigada Eskwela Implementer - Division Level</li>
 
-                        <p>Mr. Judd Lawrence D. Guy-joco</p>
-                        <li>Best Brigada Eskwela Coordinator - Secondary Level</li>
-                        <li>1st Place - 2018 Regional Brigada Eskwela Table Evaluation Best Presenter - Secondary Level</li>
+                                <p>2018</p>
+                                <li>1st Place - Best Brigada Eskwela Implementer - Division Level</li>
+                                <li>5th Place - Best Brigada Eskwela Implementer - Regional Level</li>
 
-                        <p>2017</p>
-                        <li>2nd Place - Best Brigada Eskwela Implementer - Division Level</li>
+                                <p>Mr. Judd Lawrence D. Guy-joco</p>
+                                <li>Best Brigada Eskwela Coordinator - Secondary Level</li>
+                                <li>1st Place - 2018 Regional Brigada Eskwela Table Evaluation Best Presenter - Secondary Level</li>
 
-                    </ul>
-                </div>
+                                <p>2017</p>
+                                <li>2nd Place - Best Brigada Eskwela Implementer - Division Level</li>
 
-                <div className='achievements-list-right'>
-                    <img src={Placeholder}></img>
-                </div>
-            </div>  
-          
+                            </ul>
+                        </div>
 
-            <div className="achievements-title">
-                <header>BRIGADA ESKWELA</header>
-            </div>
-            <div className='second-achievement-container'>
-                <div className="achievements-list">
-                    <ul>
-                        <p>2020</p>
-                        <li>1st Place - Best Brigada Eskwela Implementer - Division Level (Medium School Category)</li>
-                        <li>Regional Awardee</li>
-
-                        <p>Mr. Mark Anthony Galan</p>
-                        <li>Division Rank 1 - Best Brigada Eskwela Coordinator (Medium School Category)</li>
-                        <li>Regional Awardee - Brigada Eskwela Coordinator</li>
-
-                        <p>2019</p>
-                        <li>2nd Place - Best Brigada Eskwela Implementer - Division Level</li>
-
-                        <p>2018</p>
-                        <li>1st Place - Best Brigada Eskwela Implementer - Division Level</li>
-                        <li>5th Place - Best Brigada Eskwela Implementer - Regional Level</li>
-
-                        <p>Mr. Judd Lawrence D. Guy-joco</p>
-                        <li>Best Brigada Eskwela Coordinator - Secondary Level</li>
-                        <li>1st Place - 2018 Regional Brigada Eskwela Table Evaluation Best Presenter - Secondary Level</li>
-
-                        <p>2017</p>
-                        <li>2nd Place - Best Brigada Eskwela Implementer - Division Level</li>
-                    </ul>
-                </div>
-                <div className='achievements-list-right'>
-                    <img src={Placeholder}></img>
+                        <div className='achievements-list-right'>
+                            <img src={Placeholder}></img>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div className='achievement-Aboxes'>
+                <div className='box-achievement-container'>
+                    <div className="achievements-title">
+                        <header>BRIGADA ESKWELA</header>
+                    </div>
+                    <div className='second-achievement-container'>
+                        <div className="achievements-list-left">
+                            <ul>
+                                <p className='first-p'>2020</p>
+                                <li>1st Place - Best Brigada Eskwela Implementer - Division Level (Medium School Category)</li>
+                                <li>Regional Awardee</li>
 
-            <div className="covid-19">
-                <header>COVID-19</header>
+                                <p>Mr. Mark Anthony Galan</p>
+                                <li>Division Rank 1 - Best Brigada Eskwela Coordinator (Medium School Category)</li>
+                                <li>Regional Awardee - Brigada Eskwela Coordinator</li>
 
-            </div>    
+                                <p>2019</p>
+                                <li>2nd Place - Best Brigada Eskwela Implementer - Division Level</li>
 
-            <div right className="Performancess">
-                <header>PERFORMANCES</header>
-                 <h1>YUNG MGA SAYAW NAYIN</h1>
-                 
+                                <p>2018</p>
+                                <li>1st Place - Best Brigada Eskwela Implementer - Division Level</li>
+                                <li>5th Place - Best Brigada Eskwela Implementer - Regional Level</li>
+
+                                <p>Mr. Judd Lawrence D. Guy-joco</p>
+                                <li>Best Brigada Eskwela Coordinator - Secondary Level</li>
+                                <li>1st Place - 2018 Regional Brigada Eskwela Table Evaluation Best Presenter - Secondary Level</li>
+
+                                <p>2017</p>
+                                <li>2nd Place - Best Brigada Eskwela Implementer - Division Level</li>
+                            </ul>
+                        </div>
+                        <div className='achievements-list-right'>
+                            <img src={Placeholder}></img>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div right className="Performancess">
-                 <h1>YUNG MGA SAYAW NAYIN</h1>
-                 
+
+            <div className='padding-purposes'>
+                <div className='pandemic-page'>
+                    <div className="achievements-page-pandemic-graduation-line">
+                        <span className='line-achivement-padnemic'></span>
+                        <p>PANDEMIC GRADUATION</p>
+                        <span className='line-achivement-padnemic'></span>
+                    </div>
+                    <div className='pandemic-image'>
+                        <img src={Placeholder}></img>
+                        <img src={Placeholder}></img>
+                    </div>
+                </div>
             </div>
-        
-          
+            <div className='padding-purposes'>
+                <div className='performance-page'>
+                    <div className="achievements-page-performances-line">
+                        <span className='line-achivement-Performances'></span>
+                        <p>PERFORMANCES</p>
+                        <span className='line-achivement-Performances'></span>
+                    </div>
+
+                    <div right className="Performancess">
+                        <h1>YUNG MGA SAYAW NAYIN</h1>
+
+
+                        <img src={Placeholder}></img>
+
+
+                    </div>
+                    <div right className="Performancess">
+                        <h1>YUNG MGA SAYAW NAYIN</h1>
+
+                        <img src={Placeholder}></img>
+
+                    </div>
+                </div>
+            </div>
+
 
         </div>
 
