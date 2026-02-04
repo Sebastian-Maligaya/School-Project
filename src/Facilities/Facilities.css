@@ -61,4 +61,72 @@
 
 .facility-button:hover {
     background-color: #1454c8;
+}
+
+
+
+
+.facilities-title-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
+  
 }   
+
+.facilities-title{
+  background-image: linear-gradient(to bottom, #5800fa, #00b8ff);
+        color: transparent;
+        background-size: contain;
+        background-clip: text;
+        font-family: 'Times New Roman', Times, serif;
+        padding-bottom: 0%;
+        font-size: 5rem;
+        margin: 0rem;   
+}
+
+.div-line-facilities{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+
+    
+}
+
+.div-line-facilities header{
+    background-image: linear-gradient(to bottom, #5800fa, #00b8ff);
+    width: 60rem;
+    max-width: 60rem;
+    min-height: 2px;
+}
+
+.first-facilities-contnent{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.facilities-paragraph{
+    font-family: 'Inter', system-ui, sans-serif;
+    text-align: center;
+    color: #202020;
+}
+
+.direction-image h1{
+    display: flex;
+    align-items: center;
+
+}
+
+.second-facilities-contnent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
