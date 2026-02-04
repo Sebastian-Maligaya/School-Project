@@ -15,7 +15,7 @@ export default function Navbar() {
           <div className="sp-logo">
             <img src={logo} alt="SRCC logo" />
           </div>
-          <div className="sp-brand">SRCC</div>
+          <div className="sp-brand">SRCCMSTHS</div>
         </div>
 
         <button

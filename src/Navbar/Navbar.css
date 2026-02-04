@@ -21,11 +21,12 @@
   padding-right: 5rem;
 }
 .sp-brand{
-  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 500;
   letter-spacing: 0.2px;
-  color: #0f172a;
+  color: #1b58e9;
   font-family: 'FONTSPRINGDEMO-TheSeasonsRegular', serif;
-  font-weight: lighter;
+  font-weight: bold;
 }
 .sp-toggle{
   background: transparent;
