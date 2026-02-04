@@ -49,20 +49,20 @@ export default function Facilities() {
 
                 <div className='content-facilities'>
                     <div className='first-facilities-contnent'>
-                    <div className='faciliies-image'>
-                        <img src={placeholder}></img>
-                    </div>
-                    <div className='facilities-paragraph'>
-                        <p>
-                            The LANI Scholarship Program is a prestigious scholarship initiative established by the LANI Foundation, dedicated to providing financial assistance and support to deserving students pursuing higher education. The program aims to empower individuals from diverse backgrounds by offering scholarships that cover tuition fees, books, and other educational expenses. Through this scholarship, the LANI Foundation seeks to foster academic excellence, promote equal opportunities, and contribute to the development of future leaders in various fields. Recipients of the LANI Scholarship are selected based on their academic achievements, leadership potential, and commitment to community service, ensuring that the program not only supports education but also nurtures well-rounded individuals who can make a positive impact on society.
-                        </p>
-                    </div>
+                        <div className='faciliies-image'>
+                            <img src={placeholder}></img>
+                        </div>
+                        <div className='facilities-paragraph'>
+                            <p>
+                                The LANI Scholarship Program is a prestigious scholarship initiative established by the LANI Foundation, dedicated to providing financial assistance and support to deserving students pursuing higher education. The program aims to empower individuals from diverse backgrounds by offering scholarships that cover tuition fees, books, and other educational expenses. Through this scholarship, the LANI Foundation seeks to foster academic excellence, promote equal opportunities, and contribute to the development of future leaders in various fields. Recipients of the LANI Scholarship are selected based on their academic achievements, leadership potential, and commitment to community service, ensuring that the program not only supports education but also nurtures well-rounded individuals who can make a positive impact on society.
+                            </p>
+                        </div>
                     </div>
                     <div className='second-facilities-contnent'>
-                    <div className='direction-image'>
-                        <h1>Direction</h1>
-                        <img src={placeholder}></img>
-                    </div>
+                        <div className='direction-image'>
+                            <h1>Direction</h1>
+                            <img src={placeholder}></img>
+                        </div>
                     </div>
                 </div>  
 
