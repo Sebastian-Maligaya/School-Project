@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "../Homepage/Homepage.css"
+
 import StrandCard from '../Homepage/Card';
 import "./Facilities.css";
 import { Link } from 'react-router-dom';
@@ -17,6 +17,29 @@ export default function Facilities() {
     Facilities_Second_Floor,
     Facilities_Third_Floor,
     Facilities_Fourth_Floor
+  ];
+
+  const facilitiesContent = [
+    {
+      title: "GROUND FLOOR",
+      description: "The ground floor of our facility provides easy access and houses key departments...",
+      image: placeholder
+    },
+    {
+      title: "SECOND FLOOR",
+      description: "The second floor features modern classrooms and collaborative learning spaces...",
+      image: placeholder
+    },
+    {
+      title: "THIRD FLOOR",
+      description: "The third floor is dedicated to specialized labs and technical facilities...",
+      image: placeholder
+    },
+    {
+      title: "FOURTH FLOOR",
+      description: "The fourth floor offers student amenities and recreational areas...",
+      image: placeholder
+    }
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -61,30 +84,12 @@ export default function Facilities() {
                     ))}
                 </div>
             </div>
-            <div className="facilities-list"> 
-                <table className='buttons-facility'>
-                    <tr className='button-table-1'>
-                        <td><Link to="#"><button className="facility-button">Lani Scholarships</button></Link></td>
-                        <td><Link to="#"><button className="facility-button">Library</button></Link></td>
-                        <td><Link to="#"><button className="facility-button">Audio Visual Room</button></Link></td>
-                    </tr>
-                    <tr className='button-table-2'>
-                        <td><button className="facility-button">Canteen</button></td>
-                        <td><button className="facility-button">Gymnasium</button></td>
-                        <td><button className="facility-button">Clinic</button></td>
-                    </tr>
-                    <tr className='button-table-3'>
-                        <td><button className="facility-button">Guidance Office</button></td>
-                        <td><button className="facility-button">Multipurpose Hall</button></td>
-                        <td><button className="facility-button">Dormitory</button></td>
-                    </tr>
-                </table>
-            </div>
+     
             <div className="lani-scholarships-info">
 
 
                 <div className="facilities-title-section">
-                    <h1 className='facilities-title'>LANI SCHOLARSHIP</h1>
+                    <h1 className='facilities-title'>{facilitiesContent[currentIndex].title}</h1>
                 </div>
 
 
@@ -95,18 +100,18 @@ export default function Facilities() {
                 <div className='content-facilities'>
                     <div className='first-facilities-contnent'>
                         <div className='faciliies-image'>
-                            <img src={placeholder}></img>
+                            <img src={facilitiesContent[currentIndex].image}></img>
                         </div>
                         <div className='facilities-paragraph'>
                             <p>
-                                The LANI Scholarship Program is a prestigious scholarship initiative established by the LANI Foundation, dedicated to providing financial assistance and support to deserving students pursuing higher education. The program aims to empower individuals from diverse backgrounds by offering scholarships that cover tuition fees, books, and other educational expenses. Through this scholarship, the LANI Foundation seeks to foster academic excellence, promote equal opportunities, and contribute to the development of future leaders in various fields. Recipients of the LANI Scholarship are selected based on their academic achievements, leadership potential, and commitment to community service, ensuring that the program not only supports education but also nurtures well-rounded individuals who can make a positive impact on society.
+                                {facilitiesContent[currentIndex].description}
                             </p>
                         </div>
                     </div>
                     <div className='second-facilities-contnent'>
                         <div className='direction-image'>
                             <h1>Direction</h1>
-                            <img src={placeholder}></img>
+                            <img src={facilitiesContent[currentIndex].image}></img>
                         </div>
                     </div>
                 </div>  

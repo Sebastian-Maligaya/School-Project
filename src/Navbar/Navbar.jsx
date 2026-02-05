@@ -29,7 +29,7 @@ export default function Navbar() {
         <ul className={`sp-links ${open ? "open" : ""}`}>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/admissions">Admissions</Link></li>
-          <li><Link to="/classes">Classes</Link></li>
+          <li><Link to="/Classes">Classes</Link></li>
           <li><Link to="/achievements">Achievements</Link></li>
           <li><Link to="/facilities">Facilities</Link></li>
           <li><Link to="/clubs">Clubs</Link></li>
