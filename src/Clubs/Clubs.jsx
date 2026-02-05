@@ -44,9 +44,18 @@ export default function Clubs() {
         {
             name: "SCIENCE DEPARTMENT",
             clubs: [
-            {name: "SCIENCE CLUB", logo: "src/assets/science_club.jpg", link: "https://www.facebook.com/share/1MoK4WfmKX/" },
-            {name: "YES-CO", logo: "src/assets/yesco_club.jpg", link: "https://www.facebook.com/SRCCMSTHSCAT" },
-            {name: "ROBOTICS CLUB", logo: "src/assets/robotics_club.jpg", link: " https://www.facebook.com/share/1C4NWoduwe/" },
+            {name: "SCIENCE CLUB", logo: "src/assets/science_club.jpg", link: "https://www.facebook.com/share/1CCKaB5N5Z/" },
+            {name: "YES-CO", logo: "src/assets/yesco_club.jpg", link: "https://www.facebook.com/srcc.yesco" },
+            {name: "ROBOTICS CLUB", logo: "src/assets/robotics_club.jpg", link: " https://www.facebook.com/profile.php?id=100090305843850" },
+            ]
+        },
+        {
+            name: "MAPEH DEPARTMENT",
+            clubs: [
+            {name: "SPORTS CLUB", logo: "src/assets/sportsclub_2.jpg", link: "https://www.facebook.com/profile.php?id=61565010521139" },
+            {name: "PILIPINTURA", logo: "src/assets/pilipintura_club.jpg", link: "https://www.facebook.com/profile.php?id=61551558302229" },
+            {name: "DRUM AND LYRE CORPS", logo: "src/assets/drumandlyre_club.jpg", link: " https://www.facebook.com/profile.php?id=100089693978452" },
+            {name: "RESONARE CLUB", logo: "src/assets/resonare_club.jpg", link: " https://www.facebook.com/profile.php?id=61578210522673" },
             ]
         },
     ];
