@@ -7,8 +7,9 @@ import Admissionpage from './AdmissionPage/Admissionpage'
 import Achievements from './Achievement/Achievement'
 import Facilities from './Facilities/Facilities'
 import Clubs from './Clubs/Clubs'
-import Sign from './Sign/Sign.jsx' 
-import Classes from './Classes/classes.jsx' 
+import Sign from './SignPage/SignPage.jsx' 
+import Classes from './Classpage/Classpage.jsx'
+import Calendar from './Classpage/Calendar.jsx' 
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/clubs' element={<Clubs />} />
         <Route path='/Sign' element={<Sign />} />
         <Route path='/classes' element={<Classes/>} />
+        <Route path='/calendar' element={<Calendar/>} />
    
       </Routes> 
     </div>
