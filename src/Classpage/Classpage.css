@@ -1,0 +1,84 @@
+.Classes-Content{
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.Upright-NavigationBar{
+    width: 22rem;
+    height: 55rem;
+    box-shadow: 0px 3px 2rem rgba(0, 0, 1, 0.2);
+    padding-left: 1rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
+  
+}
+
+
+.Upright-NavigationBar nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.Upright-NavigationBar button{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+
+ 
+  background-color: #ffffff; 
+  color: rgb(0, 0, 0);             
+  border: none;             
+  border-radius: 10px;     
+  cursor: pointer;         
+  font-size: 16px;
+  width: 19rem;
+  height: 3rem;
+  
+
+}
+
+.Upright-NavigationBar .Class,
+.Upright-NavigationBar .Calendar {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 7px 15px;
+  background-color: #ffffff;
+  color: rgb(0,0,0);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 19rem;
+  height: 3rem;
+  text-decoration: none;
+}
+
+.Upright-NavigationBar .Class:hover,
+.Upright-NavigationBar .Calendar:hover {
+  transition: background-color 0.2s ease, color 0.2s ease;
+  background-color: rgb(235,235,235);
+}
+
+.Upright-NavigationBar .active {
+  background-color: #e6f7ff;
+  color: #003a63;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.Upright-NavigationBar .Class img,
+.Upright-NavigationBar .Calendar img {
+   width: 12%;
+   height: 100%;
+}
+
+.Upright-NavigationBar nav a,
+.Upright-NavigationBar nav a:link,
+.Upright-NavigationBar nav a:visited {
+  text-decoration: none;
+  color: inherit;
+  
+}

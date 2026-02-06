@@ -1,7 +1,8 @@
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../Homepage/Homepage.css"; // navbar
-import "./Sign.css";
+import "./SignPage.css";
 
 export default function Sign() {
   
@@ -78,5 +79,6 @@ export default function Sign() {
     
   );
 };
-  
+
+
 
