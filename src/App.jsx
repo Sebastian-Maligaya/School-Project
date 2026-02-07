@@ -10,6 +10,8 @@ import Clubs from './Clubs/Clubs'
 import Sign from './SignPage/SignPage.jsx' 
 import Classes from './Classpage/Classpage.jsx'
 import Calendar from './Classpage/Calendar.jsx' 
+import AdminDashboard from './AdminDashboard/AdminDashboard.jsx'
+import TeacherDashboard from './TeacherDashboard/TeacherDashboard.jsx'
 
 function App() {
   return (
@@ -24,7 +26,8 @@ function App() {
         <Route path='/Sign' element={<Sign />} />
         <Route path='/classes' element={<Classes/>} />
         <Route path='/calendar' element={<Calendar/>} />
-   
+        <Route path='/admin' element={<AdminDashboard/>} />
+        <Route path='/teacher' element={<TeacherDashboard/>} />
       </Routes> 
     </div>
   )

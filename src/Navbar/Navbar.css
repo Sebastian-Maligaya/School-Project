@@ -111,3 +111,28 @@
   .sp-links.open{ display: flex }
 }
 
+/* Logout button in navbar */
+.sp-logout-li {
+  display: flex;
+  align-items: center;
+}
+
+.sp-logout-btn {
+  font-size: 14px;
+  color: #dc2626;
+  background: none;
+  border: 1.5px solid #dc2626;
+  padding: 0.35rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-family: sans-serif;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.sp-logout-btn:hover {
+  background: #dc2626;
+  color: #fff;
+}

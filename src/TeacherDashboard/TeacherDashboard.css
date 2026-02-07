@@ -1,0 +1,248 @@
+.teacher-dashboard {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 100px 24px 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.teacher-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.teacher-header h1 {
+  font-size: 2rem;
+  color: #1a1a2e;
+  margin-bottom: 4px;
+}
+
+.teacher-header p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.post-btn {
+  padding: 12px 28px;
+  background: #00b894;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.post-btn:hover {
+  background: #00a381;
+}
+
+.hw-form {
+  background: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.hw-form h3 {
+  margin-bottom: 16px;
+  color: #1a1a2e;
+}
+
+.hw-form .form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.hw-form .form-row label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+}
+
+.hw-form .form-row input,
+.hw-form .form-row textarea {
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.hw-form .form-row input:focus,
+.hw-form .form-row textarea:focus {
+  border-color: #4400ff;
+}
+
+.hw-form .form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.hw-form .form-actions button {
+  padding: 10px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.hw-form .form-actions button[type="submit"] {
+  background: #4400ff;
+  color: #fff;
+}
+
+.hw-form .form-actions button[type="button"] {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.hw-list h2 {
+  font-size: 1.4rem;
+  color: #1a1a2e;
+  margin-bottom: 16px;
+}
+
+.hw-list .empty {
+  color: #999;
+  font-style: italic;
+}
+
+.hw-card {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.2s;
+}
+
+.hw-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.hw-card.expired {
+  opacity: 0.6;
+  border-color: #ffcccc;
+}
+
+.hw-tags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.hw-tag {
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.section-tag {
+  background: #e8efff;
+  color: #1b58e9;
+}
+
+.strand-tag {
+  background: #e6fff5;
+  color: #00b894;
+}
+
+.subject-tag {
+  background: #fff3e0;
+  color: #e67e22;
+}
+
+.hw-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.hw-card-header h3 {
+  font-size: 1.1rem;
+  color: #1a1a2e;
+}
+
+.expired-badge {
+  background: #ff4757;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hw-desc {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.hw-meta {
+  display: flex;
+  gap: 24px;
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 12px;
+}
+
+.hw-card .delete-btn {
+  padding: 6px 16px;
+  background: #ff4757;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.hw-card .delete-btn:hover {
+  background: #e03e4e;
+}
+
+.teacher-denied {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.teacher-denied h2 {
+  color: #ff4757;
+  margin-bottom: 10px;
+}
+
+.teacher-denied button {
+  margin-top: 16px;
+  padding: 10px 28px;
+  background: #4400ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
