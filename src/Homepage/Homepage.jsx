@@ -15,6 +15,7 @@ import emailicon from "../assets/emailicon.png";
 import HorizontalCard from "./HorizontalCard";
 import Gradhat from "../assets/Gradhat.png";
 import Placeholder from "../assets/Placeholder.jpg"
+import HeroVideo from "../assets/welcomebacksrcc.mp4";
 
 
 
@@ -44,12 +45,19 @@ export default function Homepage() {
     <div className="hp-page">
 
       <div id="home" className="hp-hero">
+      {/* The Video Background */}
+      <video autoPlay loop muted playsInLine className="hero-video">
+        <source src={HeroVideo} type="video/mp4" />
+        Your browser does not support the video tag
+      </video>
+
+      {/* Overlay content stays on top */}
+      <div className="hero-overlay">
         <p className="ABC">Senator Renato "Compañero" Cayetano Memorial Science and Technology High School</p>
-        <p className="hp-sub">
-          "HOME OF THE INTERNATIONAL CHAMPIONS"
-        </p>
+        <p className="hp-sub">"Developing Globally Competitive Students."</p>
         <div>
           <Link to="/admissions" className="btn-primary">Apply Now</Link>
+        </div>
         </div>
       </div>
 
