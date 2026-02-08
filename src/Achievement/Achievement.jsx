@@ -46,7 +46,7 @@ const NewsItem = ({ item }) => {
     const isVideo = typeof currentFile === 'string' && (currentFile.endsWith('.mp4') || currentFile.endsWith('.mov'));
 
     return (
-        <div className='news-card'>
+        <div className={`news-card news-card-${item.id}`}>
             <div className='news-image-container'>
                 <div className="slider">
                     {hasMultipleItems && (
@@ -60,6 +60,8 @@ const NewsItem = ({ item }) => {
                         <video src={currentFile} className="news-poster" controls muted />
                     ) : (
                         <img src={currentFile} alt="News" className="news-poster slider-fade" />
+                        
+                        
                     )}
                 </div>
 
@@ -98,7 +100,7 @@ const NewsItem = ({ item }) => {
 
 export default function Achievements() {
     const allNews = [
-        {
+        {   
             id: 1,
             date: "JANUARY 05, 2026",
             headline: "FIRST BATCH OF WORK IMMERSION 2025-2026 ALTIORA: BRIDGING EDUCATION AND INDUSTRY",

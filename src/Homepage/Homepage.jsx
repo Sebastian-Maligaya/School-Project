@@ -15,6 +15,8 @@ import emailicon from "../assets/emailicon.png";
 import HorizontalCard from "./HorizontalCard";
 import Gradhat from "../assets/Gradhat.png";
 import Placeholder from "../assets/Placeholder.jpg"
+import Sports from "../assets/Sports.png"
+import Librarycard from "../assets/Librarycard.jpg"
 
 
 
@@ -211,7 +213,7 @@ export default function Homepage() {
             </article>
 
             <article className="gallery-item">
-              <img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?q=80&w=1200&auto=format&fit=crop&s=2b2b2b" alt="Sports activity" />
+              <img src={Sports} alt="Sports activity" />
               <div className="overlay">
                 <h3>Sports</h3>
                 <p>Teamwork and physical development</p>
@@ -219,7 +221,7 @@ export default function Homepage() {
             </article>
 
             <article className="gallery-item">
-              <img src="https://images.unsplash.com/photo-1523580494863-6e55d7f7a9b0?q=80&w=1200&auto=format&fit=crop&s=3c3c3c" alt="Library and students reading" />
+              <img src={Librarycard} alt="Library and students reading" />
               <div className="overlay">
                 <h3>Library</h3>
                 <p>Quiet space for study and research</p>
@@ -275,13 +277,13 @@ export default function Homepage() {
       </main>
 
       <footer className="footer">
-        <div className="footer-box">
-          <div className="footer-content">
-
-
+        <div className="footer-content">
+          <div className="school-info">
+            <h2 className="school-name">Senator Renato "Compañero" Cayetano Memorial Science and Technology High School</h2>
+            <p className="tagline">Inspiring excellence in education since 2005</p>
           </div>
-          <div className="footer-bottom">
-            <p>&copy; 2025 SRCMTHS. All rights reserved.</p>
+          <div className="copyright">
+            <p>© 2025 SRCCMSTHS. All rights reserved.</p>
           </div>
         </div>
       </footer>

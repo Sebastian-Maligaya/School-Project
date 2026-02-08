@@ -80,7 +80,7 @@ export default function Admissionpage() {
       </div>
     )
   },
-  { 
+  {   
     title: "ENROLLMENT REQUIREMENTS", 
     content: (
       <div>
@@ -202,6 +202,7 @@ export default function Admissionpage() {
 ];
   return (
     <div className="admission-page">
+      <div>
       <header className="admission-header">
         <div className='admission-h'>
           <h1>Admission</h1>
@@ -346,6 +347,12 @@ export default function Admissionpage() {
           </div>
         </div>
       </div>
+      </div>
+
+      
     </div>
+    
+
+
   )
 }

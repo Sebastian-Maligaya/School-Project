@@ -3,28 +3,38 @@
     margin: 0;
     padding: 0 8.5rem 0;
     box-sizing: border-box;
+    background: #f0f4ff;
 }
 
-.facilities-title header {
-    text-align: center;
-    font-size: 4rem;
-    color: #333;
-    margin-bottom: 2rem;
-    font-weight: 600;
-    font-family: 'Inter', system-ui, sans-serif;
+.facilities-subtitle-first {
+ display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+
 }   
 
-.facilities-title h1 {
-  font-size: 3rem;
-  color: #1b58e9;
-  margin: 0 0 1rem;
+.facilities-subtitle-first h2{
+   margin: 0rem;
+   font-size: 2rem;
+     background-image: linear-gradient(to bottom, #5800fa, #00b8ff);
+        color: transparent;
+        background-size: contain;
+        background-clip: text;
+}
+
+.facilities-title-start h1{
+  font-size: 5rem;
+  background-image: linear-gradient(to bottom, #5800fa, #00b8ff);
+        color: transparent;
+        background-size: contain;
+        background-clip: text;
+  margin: 0;
   font-weight: 700;
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   text-align: center; 
-  padding-top: 80px;
-  padding-bottom: 5rem;
+  padding-top: 1px;
 }
 
 .facilities-image {
@@ -88,7 +98,7 @@
     gap: 8px;
     align-items: center;
     justify-content: center;
-    margin-top: 12px;
+    margin-top: 5px;
 }
 
 .facility-indicator {
@@ -168,37 +178,307 @@
     
 }
 
+.lani-scholarships-info{
+}
+
 .div-line-facilities header{
     background-image: linear-gradient(to bottom, #5800fa, #00b8ff);
-    width: 60rem;
+    width: 35rem;
     max-width: 60rem;
     min-height: 2px;
 }
 
+.facilties-subtitle-section{
+  justify-items: center;
+  padding-bottom: 2rem;
+
+  
+}
+
+.facilities-subtitle{
+
+      background-image: linear-gradient(to bottom, #5800fa, #00b8ff);
+        color: transparent;
+        background-size: contain;
+        background-clip: text;
+        font-family: 'Times New Roman', Times, serif;
+        padding-bottom: 0rem;
+        font-size: 2rem;    
+        margin: 0rem;  
+}
+
 .first-facilities-contnent{
+    padding: 3rem;
     display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
     gap: 2rem;
 }
 
 .facilities-paragraph{
     font-family: 'Inter', system-ui, sans-serif;
-    text-align: center;
-    color: #202020;
+    color: #475569;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    font-size: 1.05rem;
 }
 
-.direction-image h1{
+
+
+.facilities-paragraph header{
+    font-size: 1.6rem;
+    color: #0f172a;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.faciliies-img img{
+    width: 44.64rem;
+    height: 31.56rem;
+}
+
+
+.second-facilities-contnent{
     display: flex;
-    align-items: center;
+    justify-content: center;
+
     
+}
+
+.direction-img h1{
+    text-align: center;
 }
 
 .direction-image{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
     
 }
+
+
+/* CARD LAYOUT (flex) */
+.ground-floor-cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    transform: translateZ(0);
+}
+
+.facility-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 320px; /* grow, shrink, base width */
+    max-width: 360px; /* keep reasonable max card width */
+    display: flex;
+    flex-direction: column;
+}
+
+.facility-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.facility-card-header {
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(135deg, #1b58e9 0%, #0d3fa8 100%);
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+}
+
+.facility-card-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.facility-card-content {
+    padding: 1.5rem;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+.facility-card-content h3 {
+    font-size: 1.2rem;
+    color: #0f172a;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.facility-card-content p {
+    color: #64748b;
+    line-height: 1.7;
+    font-size: 0.95rem;
+    text-align: left;
+    margin: 0 0 0.85rem 0; /* space between paragraphs */
+    
+}
+
+.facility-card-content p strong {
+    display: block;
+    color: #616770;
+    margin-top: 1.2rem;
+    margin-bottom: 0.4rem;
+}
+
+.facility-card-content p:has(quote),
+.facility-card-content p:nth-of-type(2) {
+    text-align: center;
+    font-style: italic;
+    color: #475569;
+}
+
+.second-floor-card {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+/* THIRD FLOOR - Custom Card */
+.third-floor-card {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+/* FOURTH FLOOR - Custom Card */
+.fourth-floor-card {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+
+.facilities-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 4rem;
+  align-items: start;
+  padding: 4rem 0;
+}
+
+/* LEFT – CARDS */
+.facilities-left {
+  display: flex;
+  flex-direction: column;
+}
+
+/* RIGHT – MAP */
+.facilities-right {
+  position: sticky;
+  top: 6rem;
+
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 3rem 2.5rem;
+
+  box-shadow: 0 12px 40px rgba(15, 23, 42, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.facilities-right {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 12px 40px rgba(15, 23, 42, 0.08);
+
+  animation: slideInRight 0.8s ease-out both;
+}
+
+@keyframes mapReveal {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.facilities-image {
+  animation: mapReveal 0.9s ease-out 0.2s both;
+}
+
+/* IMAGE SIZE ADJUSTMENT */
+.facility-main-image {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* CARD GRID – AUTO ADJUST FOR 1, 2, OR MANY */
+.ground-floor-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .facilities-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .facilities-right {
+    position: relative;
+    top: 0;
+    order: -1;
+  }
+}
+
+@keyframes cardFadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.facility-card {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: cardFadeUp 0.6s ease-out forwards;
+  animation-delay: 0.15s;
+}
+
+.facility-card:nth-child(1) { animation-delay: 0.15s; }
+.facility-card:nth-child(2) { animation-delay: 0.25s; }
+.facility-card:nth-child(3) { animation-delay: 0.35s; }
+.facility-card:nth-child(4) { animation-delay: 0.45s; }
+.facility-card:nth-child(5) { animation-delay: 0.55s; }
+
+.facility-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.facility-card:hover {
+  transform: translateY(-6px);
+}
+
+

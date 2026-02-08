@@ -58,7 +58,11 @@ export default function Navbar() {
               </button>
             </li>
           ) : (
-            <li><Link to="/sign">Log in</Link></li>
+            <li className="log-in">
+              <Link to="/sign">
+              <span className="button-text">Log in</span>
+              </Link>
+            </li>
           )}
         </ul>
       </div>
