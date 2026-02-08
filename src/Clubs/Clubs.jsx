@@ -58,6 +58,13 @@ export default function Clubs() {
             {name: "RESONARE CLUB", logo: "src/assets/resonare_club.jpg", link: " https://www.facebook.com/profile.php?id=61578210522673" },
             ]
         },
+                {
+            name: "ICT DEPARTMENT",
+            clubs: [
+            {name: "CYBER NEXUS", logo: "src/assets/ict_club.jpg", link: "https://www.facebook.com/srccict" },
+            {name: "MITS", logo: "src/assets/mits_club.jpg", link: " https://www.facebook.com/srccmsths.mits " },
+            ]
+        },
     ];
 
     return (

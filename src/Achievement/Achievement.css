@@ -187,3 +187,53 @@ video.news-poster {
     object-fit: cover;
     background: #000; /* Black background for video borders */
 }
+
+.pagination-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 40px 0 80px;
+}
+
+.page-number {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #1b58e9;
+    background: white;
+    color: #1b58e9;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.page-number.active {
+    background: #1b58e9;
+    color: white;
+}
+
+.page-nav-btn {
+    padding: 8px 16px;
+    background: transparent;
+    border: none;
+    color: #1b58e9;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.page-nav-btn:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.inline-link {
+    color: #1b58e9;
+    text-decoration: underline;
+    word-break: break-all; /* Prevents long links from breaking the layout */
+    font-weight: bold;
+}
+
+.inline-link:hover {
+    color: #0d3ba1;
+}
