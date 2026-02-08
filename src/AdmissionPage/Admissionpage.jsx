@@ -6,6 +6,7 @@ import "./accordion.css";
 import "./AdmissionPage.css";
 import Accordion from "./accordion.jsx";
 import Microscopeicon from "../assets/microscopeicon.jpg";
+import Footer from '../Footer/Footer.jsx';
 
 export default function Admissionpage() {
 
@@ -201,6 +202,7 @@ export default function Admissionpage() {
   },
 ];
   return (
+    <div>
     <div className="admission-page">
       <div>
       <header className="admission-header">
@@ -349,9 +351,10 @@ export default function Admissionpage() {
       </div>
       </div>
 
-      
+
     </div>
-    
+    <Footer />
+    </div>
 
 
   )
