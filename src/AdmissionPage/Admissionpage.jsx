@@ -229,15 +229,25 @@ export default function Admissionpage() {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td className="label">
-                <button className="btn-primary">LEARN MORE</button>
-              </td>
-              <td className="label">
-                <button className="btn-primary">LEARN MORE</button>
-              </td>
-            </tr>
-          </tbody>
+                <tr>
+                  <td className="label">
+                    <button
+                      className="btn-primary"
+                      onClick={() => document.getElementById('section1').scrollIntoView({ behavior: 'smooth' })}
+                    >
+                      LEARN MORE
+                    </button>
+                  </td>
+                  <td className="label">
+                    <button
+                      className="btn-primary"
+                      onClick={() => document.getElementById('section2').scrollIntoView({ behavior: 'smooth' })}
+                    >
+                      LEARN MORE
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
         </table>
       </header>
 
@@ -298,21 +308,22 @@ export default function Admissionpage() {
             <p> Yes. For incoming Grade 7, we can only accept the top 160 applicants basd on their screening criteria. For Grade 11, slots will be available depending on the number of Grade 10 students who will transfer to another school for Senior High School.</p>
           </li>
         </ol>
-      </div>
-
+      </div>                   
       <div className='high-school'>
-        <div className='JUNIOR-HIGH-SCHOOL-CONTAINER'>
-          <div className='JUNIOR-HIGH-SCHOOL'>
-            <h3>JUNIOR HIGH SCHOOL</h3>
-            <p>
-              This is to announce on the field of Admission and Screening for Senator Renato "Compañero" Cayetano Memorial Science and Technology High School for incoming Grade 7 students under Science, Technology, and Engineering (STE) Program ---
-            </p>
-          </div>
-          {/* JHS Accordion with specific data */}
-          <Accordion data={jhsSections} />
-        </div>
-
+              <section id="section1">
+                <div className='JUNIOR-HIGH-SCHOOL-CONTAINER'>
+                  <div className='JUNIOR-HIGH-SCHOOL'>
+                    <h3>JUNIOR HIGH SCHOOL</h3>
+                    <p>
+                      This is to announce on the field of Admission and Screening for Senator Renato "Compañero" Cayetano Memorial Science and Technology High School for incoming Grade 7 students under Science, Technology, and Engineering (STE) Program ---
+                    </p>
+                  </div>
+                  {/* JHS Accordion with specific data */}
+                  <Accordion data={jhsSections} />
+                </div>
+              </section>  
         <div className='SENIOR-HIGH-SCHOOL-CONTAINER'>
+          <section id="section2">
           <div className='SENIOR-HIGH-SCHOOL'>
             <h3 className='title-senior'>SENIOR HIGH SCHOOL</h3>
             <h4>GUIDELINES FOR ADMISSION IN SCIENCE, TECHNOLOGY, AND ENGINEERING (STE) Program in Junior High School specifically for Incoming Grade 7 Students S.Y. 2021-2022</h4> 
@@ -347,6 +358,7 @@ export default function Admissionpage() {
             {/* SHS Accordion with specific data */}
             <Accordion data={shsSections} />
           </div>
+          </section>
         </div>
       </div>
       </div>

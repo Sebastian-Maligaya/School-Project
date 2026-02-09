@@ -1,5 +1,4 @@
 
-
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import CountUp from "react-countup";
@@ -18,8 +17,8 @@ import Placeholder from "../assets/Placeholder.jpg"
 import Sports from "../assets/Sports.png"
 import Librarycard from "../assets/Librarycard.jpg"
 import Footer from "../Footer/Footer";
-
-
+import Rian from "../assets/Rian.png"
+import Arturo from "../assets/Arturo.png"
 
 export default function Homepage() {
   const [visible, setVisible] = useState(false); // track if table is in view
@@ -61,13 +60,9 @@ export default function Homepage() {
           <div className="hp-about-grid">
             <div className="hp-left">
               <h2>About our School</h2>
-
-
-              <p>The Sunrays stands for the light that illuminates your path in building a temple of immortal souls in the future generations; the Open Book means that anyone may come to engraft a branch of knowledge into the stock of wisdom. The Mountains and Sunrays represents hope of a new beginning.</p>
-
-              <p>The Gear symbolizes technology and know-how in the modern society. The Building represents the City of Taguig of modern infrastructures whilst the White Duck represents Pateros. The Laurel leaves represent the dignity of man and serve as the emblem of victory, of a courageous flight of success.</p>
-
-              <p className="lastp">This is the meaning of our seal, revere it, cherish it, and lives by it always.</p>
+              <p>Established through the initiative of Congressman Alan Peter S. Cayetano via House Bill No. 4448 in 2002, the Sen. Renato “Compañero” Cayetano Memorial Science and Technology High School (SRCCMSTHS) was created to provide elite, free science and technology education to deserving public school students in Taguig and Pateros. </p>
+              <p>After securing a 5,000-square-meter site in Pamayanang Diego Silang and constructing two four-story buildings, the school received official DepEd approval in September 2004.</p>
+              <p className="lastp">Following a rigorous admission process that selected only 146 inaugural students, the institution—renamed in honor of the late Senator Renato Cayetano—began its operations on June 6, 2005. Today, "SRCC" serves as a premier academic hub focused on Science, Mathematics, and Communication Arts, aiming to produce "Compañeros" and "Compañeras" who can compete with the best private institutions in the country.</p>
 
               <table className="percentage-data-table" ref={tableRef}>
                 <tbody>
@@ -99,64 +94,63 @@ export default function Homepage() {
         </section>
         <section>
           <div className="Vision-Mission">
-             <div className="card-vission">
-              <div className="vission-icon"><img src={Bookicon} alt="Vissionicon" className="Vissionicon" /></div>
-              <span className="vission-tag"></span>
-              <h3 className="vission-title">MISSION</h3>
-              <p className="vission-description">
-                We shall achieve academic excellence in the field of science and technology by developing globally competitive students determine to cope in a technology-oriented society dedicated to God. 
-              </p>
+            <div className="mv-top">
+              <div className="divider"></div>
+              <div className="mv-box">
+                <h2>Our Mission</h2>
+                <p>
+                  We shall achieve academic excellence in the field of science and
+                  technology by developing globally competitive students determined
+                  to cope in a technology-oriented society dedicated to God.
+                </p>
+              </div>
+
+              <div className="divider"></div>
+              <div className="mv-box">
+                <h2>Our Vision</h2>
+                <p>
+                  We shall emerge as the premier school of science and technology in
+                  the National Capital Region with pro-active leadership providing
+                  quality technical education to our learners thereby developing
+                  their full potentials and producing academically excellent and
+                  morally upright individuals.
+                </p>
+              </div>
             </div>
 
-            <div className="card-vission">
-              <div className="vission-icon"><img src={Bannericon} alt="Vissionicon" className="Vissionicon" /></div>
-              <span className="vission-tag"></span>
-              <h3 className="vission-title">VISION</h3>
-              <p className="vission-description">
-                We shall emerge as the premier school of science and technology in the National Capital Region with pro-active leadership providing quality technical education to our learners thereby developing their full potentials and producing academically excellent and morally upright individuals.
-              </p>
+            {/* Bottom Section */}
+            <div className="mv-bottom">
+            
+              {/* Image */}
+              <img src={Rian} alt="George P. Tizon" className="mv-image" />
+              <img src={Arturo} alt="George P. Tizon" className="mv-image-2" />
+
+              {/* Text content */}
+              <div className="mv-bottom-content-content">
+                <span className="mv-bottom-content">
+                  <h3>RIAN A. LORIEGA</h3>
+                  <h1>Assistant Schools Division Superintendent</h1>
+                  <h2>Officer-In-Charge</h2>
+                  <h2>Office of the School Principal</h2>
+                </span>
+                <span className="mv-bottom-content-2">
+                  <h3>ARTURO A. TOLENTINO</h3>
+                  <h1>Assistant Schools Division Superintendent</h1>
+                  <h2>Officer-In-Charge</h2>
+                  <h2>Office of the School Principal</h2> 
+                </span>
+              </div>
             </div>
           </div>
+
         </section>
 
 
-          <section className="Founder">
-          <div className="right-founder">
-          <img src={Placeholder} className="Founder-image"/>
-          </div>
-          <div className="left-Founder">
-            <h1>George P. Tizon, Ed. D.</h1>
-            <p>Founding Principal of SRCCSTHMS, Dr. Tizon has been the guiding force behind our school’s vision and mission. With a passion for excellence in education, he laid the foundation for a learning environment that nurtures both academic achievement and personal growth. Under his leadership, SRCCSTHMS has become a beacon of innovation, discipline, and holistic development for students.</p>
-          </div>
-        </section> 
-        <section className="Founder-2">
-          <div className="right-founder-2">
-          <img src={Placeholder} className="Founder-image"/>
-          </div>
-          <div className="left-Founder-2">
-            <h1>George P. Tizon, Ed. D.</h1>
-            <p>Founding Principal of SRCCSTHMS, Dr. Tizon has been the guiding force behind our school’s vision and mission. With a passion for excellence in education, he laid the foundation for a learning environment that nurtures both academic achievement and personal growth. Under his leadership, SRCCSTHMS has become a beacon of innovation, discipline, and holistic development for students.</p>
-          </div>
-        </section> 
 
-        <div className="hat-line">
-          <section class="contact-section">
-            <div className="contact-title">
-              <span className="line"></span>
-              <h2><img src={Gradhat} alt="Graduation Hat" className="sp-brand" /></h2>
-              <span className="line"></span>
 
-            </div>
-          </section>
-        </div>
+        <section id="programs" className="hp-section-card">
 
-    
-
-        
-
-        <section id="programs" className="hp-section">
-
-          <div id="program-page-desc" className="hp-section">
+          <div id="program-page-desc" className="hp-section-card">
             <h1>Our programs</h1>
             <p>We offer a diverse range of programs designed to nurture <br />every aspect of your child's development.</p>
           </div>
@@ -239,40 +233,11 @@ export default function Homepage() {
           </div>
         </section>
 
-        <section class="contact-section">
-          <div class="contact-title">
-            <span class="line"></span>
-            <h2>Contact Information</h2>
-            <span class="line"></span>
-          </div>
+       
+         
 
-          <div className="contact-grid">
-
-            <HorizontalCard
-              icon={locationicon}
-              title="Location"
-              content="Cayetano Sci-Tech Memorial High School, 1001 P. C. Valdez St., Taguig City" />
-
-            <HorizontalCard
-              icon={phoneicon}
-              title="Phone Number"
-              content="(02) 8765-4321" />
-
-            <HorizontalCard
-              icon={emailicon}
-              title="Email Address"
-              content="info@srcmthscayetano.edu.ph" />
-
-            <HorizontalCard
-              icon={emailicon}
-              title="Website"
-              content="www.srcmthscayetano.edu.ph" />
-
-
-
-          </div>
-        </section>
-
+         
+       
 
 
       </main>

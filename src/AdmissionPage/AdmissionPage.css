@@ -28,12 +28,12 @@
 }
 
  .contact-title1 .admission-line1 {
-  display: block;              /* make span behave like a block */
-  height: 0.12rem;             /* line thickness */
-  width: 100%;                  /* allow it to shrink to max-width */
-  max-width: 600px;             /* change as needed */
-  margin: 0 auto;               /* centers it horizontally */
-  border-radius: 2px;           /* optional, make edges smooth */
+  display: block;              
+  height: 0.12rem;            
+  width: 100%;                  
+  max-width: 600px;             
+  margin: 0 auto;              
+  border-radius: 2px;          
   background-image: linear-gradient(to bottom, #5800fa,  #00b8ff);
 }
 
@@ -125,7 +125,8 @@ padding-top: 4rem;
 }
 
 .btn-primary:hover {
-  background-color: #154bb5;
+  background-color: #00b8ff; /* simple hover swap */
+  transform: translateY(-2px); /* subtle lift */
 } 
 
 .admission-questions {
