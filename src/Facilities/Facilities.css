@@ -52,11 +52,7 @@
     display: inline-block;
 }
 
-.facility-main-image {
-    width: 60rem;
-    height: 35rem;
-    display: block;
-}
+
 
 .facility-nav {
     position: absolute;
@@ -417,7 +413,7 @@
 /* IMAGE SIZE ADJUSTMENT */
 .facility-main-image {
   width: 100%;
-  max-width: 520px;
+  max-width: 600px;
   height: auto;
   aspect-ratio: 16 / 9;
   border-radius: 12px;
