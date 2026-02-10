@@ -75,13 +75,13 @@ export default function Sign() {
             <div className="sign-demo">
               <strong>Demo Accounts:</strong><br />
               Admin: admin@srcc.edu / admin123<br />
-              Teacher: juan@srcc.edu / teacher123<br />
-              Student: anna@srcc.edu / student123
+              Teacher: maria@srcc.edu / teacher123<br />
+              Student: gaddi@srcc.edu / gaddi123
             </div>
           </form>
         </div>
 
-        {/* Decorative Panel */}
+        
         <div className="sign-panel-side">
           <h1>Welcome!</h1>
           <p>Sign in with your school credentials to access your dashboard</p>

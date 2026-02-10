@@ -16,6 +16,10 @@ import csslab from "../assets/css-lab.png";
 import auditorium from "../assets/auditorium.png"
 import liblary from "../assets/liblary.png"
 import skylab from "../assets/skylab.png"
+import canteen from "../assets/canteen.jpg"
+import adminoffice from "../assets/adminoffice.jpg"
+import maclab from "../assets/maclab.png"
+import guidanceoffice from "../assets/guidanceoffice.png"
 
 export default function Facilities() {
      const facilitiesImages = [
@@ -28,25 +32,24 @@ export default function Facilities() {
   const facilitiesContent = [
     {
       title: "GROUND FLOOR",
-      header:"adada",
-      twoimage: placeholder,
+      twoimage: adminoffice,
       twoheader:"Admin Office",
-      twodescription: "Admin description in here",
+      twodescription: "The Administrative Office serves as the central hub of operations and management within the institution. It is responsible for handling official records, processing documents, coordinating communication, and providing administrative support to students, teachers, staff, and visitors.",
       threeimage: clinic,
       threeheader:"Clinic",
-      threedescription: "The School Clinic is a place within the school campus wherein primary care is rendered to a sick patient. The school health services are vitally necessary in order to provide first aid and triage for illness and injuries, to provide direct services for students with special needs, and to provide health counseling and education for students, and staff. ",
-      fourimage: placeholder,
+      threedescription: "The School     Clinic is a place within the school campus wherein primary care is rendered to a sick patient. The school health services are vitally necessary in order to provide first aid and triage for illness and injuries, to provide direct services for students with special needs, and to provide health counseling and education for students, and staff. ",
+      fourimage: canteen,
       fourheader:"Canteen",
       fourdescription: "The school canteen is the main source of food and beverages for the students, teachers, staff, and visitors. The canteen consists of two rooms, a carinderia and a designated room for sari-sari stores. The canteen is open from 7 AM to 4 PM.",
-      fiveimage: placeholder,
+      fiveimage: maclab,
       fiveheader:"MAC Lab",
       fivedescription: "The MAC Lab or Multimedia Arts Cyber Lab is a specialized computer room for Multimedia Arts . As a project by the Taguig Government, it aims to develop  student's 21st Century Skills like media and technology literacy. As an Apple Authorized Training Centre for Education, our school can build a bridge between students and real-world careers.",
       siximage: csslab,
       sixheader:"CSS Lab",
       sixdescription: "The CSS Lab, also known as the Electronics Shop, is a computer room used to train ICT students and hold ICT-related activities. The lab consists of fully-functional and advanced computer hardware from servers to high-end personal computers provided by the Department of Education.  ",
-      sevenimage: placeholder,
+      sevenimage: guidanceoffice,
       sevenheader:"Guidance Office",
-      sevendescription: "Guidance Description Office Here mga FAFAFAFAFAA",
+      sevendescription: "The Guidance Office serves as a supportive and nurturing space dedicated to promoting students’ academic, personal, social, and emotional development. It provides counseling services, guidance programs, and interventions that help students understand themselves better, manage challenges, and make informed decisions about their education and future careers.",
       
 
     },
@@ -149,7 +152,6 @@ export default function Facilities() {
         <div className="facilities-container">
             <div className="facilities-layout">
 
-                {/* LEFT SIDE – CARDS */}
                 <div className="facilities-left">
                     <div className="facilities-title-section">
                         <h1 className="facilities-title">
@@ -187,7 +189,7 @@ export default function Facilities() {
                     </div>
                 </div>
 
-                {/* RIGHT SIDE – MAP / SLIDER */}
+
                 <div className="facilities-right">
                     <div className="facilities-title-start">
                         <h1>FACILITIES</h1>

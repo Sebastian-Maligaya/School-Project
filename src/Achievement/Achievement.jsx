@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "./Achievement.css";
+import Footer from '../Footer/Footer.jsx';
 
 // Safely grab images/videos. If folder doesn't exist, it returns an empty object.
 const workFiles = import.meta.glob('../assets/NewsPage/WorkImmersionPub/*.{png,jpg,jpeg,JPG,mp4,mov}', { eager: true });
@@ -93,7 +94,7 @@ const NewsItem = ({ item }) => {
                         return <p key={i} className="news-paragraph">{line}</p>;
                     })}
                 </div>
-            </div>
+            </div> 
         </div>
     );
 };
@@ -147,12 +148,21 @@ export default function Achievements() {
     ];
 
     return (
+        <div>
         <div className="news-container">
             <div className="news-header-section">
                 <h1 className='news-title'>NEWS & UPDATES</h1>
                 <span className='news-underline'></span>
             </div>
             {allNews.map(item => <NewsItem key={item.id} item={item} />)}
+            
         </div>
+         <Footer/>
+        </div>
+
+
+        
+      
     );
 }
+

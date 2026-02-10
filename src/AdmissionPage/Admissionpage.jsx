@@ -7,6 +7,8 @@ import "./AdmissionPage.css";
 import Accordion from "./accordion.jsx";
 import Microscopeicon from "../assets/microscopeicon.jpg";
 import Footer from '../Footer/Footer.jsx';
+import monitoricon from "../assets/Monitoricon.png"
+import ABMicon from "../assets/ABMicon.png"
 
 export default function Admissionpage() {
 
@@ -340,7 +342,7 @@ export default function Admissionpage() {
               />
               <StrandCard
                 strand={{
-                  icon:<img src={Microscopeicon} alt="ABM" className="club-icon"/>,
+                  icon:<img src={ABMicon} alt="ABM" className="club-icon"/>,
                   tag: "ABM",
                   title: "Accountancy, Business, and Management",
                   description: "Prepares students for careers in business and finance."
@@ -348,7 +350,7 @@ export default function Admissionpage() {
               />
               <StrandCard
                 strand={{
-                  icon:<img src={Microscopeicon} alt="ICT" className="club-icon"/>,
+                  icon:<img src={monitoricon} alt="ICT" className="club-icon"/>,
                   tag: "ICT",
                   title: "Information and Communication Technology",
                   description: "Develops critical thinking and communication skills."

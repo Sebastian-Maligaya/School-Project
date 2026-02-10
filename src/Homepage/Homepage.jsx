@@ -19,6 +19,7 @@ import Librarycard from "../assets/Librarycard.jpg"
 import Footer from "../Footer/Footer";
 import Rian from "../assets/Rian.png"
 import Arturo from "../assets/Arturo.png"
+import schoolpic from "../assets/schoolpicture.png"
 
 export default function Homepage() {
   const [visible, setVisible] = useState(false); // track if table is in view
@@ -87,7 +88,7 @@ export default function Homepage() {
             </div>
 
             <div className="hp-right">
-              <img className="about-img" src="https://cdn.britannica.com/19/148619-004-113E7353.jpg" alt="School placeholder" />
+              <img className="about-img" src={schoolpic}/>
             </div>
           </div>
 

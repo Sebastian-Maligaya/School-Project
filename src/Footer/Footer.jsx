@@ -22,10 +22,10 @@ function Footer() {
           <h3 className="footer-heading">DISCOVER</h3>
           <ul className="footer-links">
             <li>
-              <a href="/about">About SRCCMSTHS</a>
+              <a href="#">About SRCCMSTHS</a>
             </li>
             <li>
-              <a href="/programs">Academic Programs</a>
+              <a href="#">Academic Programs</a>
             </li>
             <li>
               <a href="/facilities">SRCCMSTHS Facilities</a>
