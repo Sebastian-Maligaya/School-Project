@@ -24,29 +24,6 @@ export default function Sign() {
     }
   }
 
-  if (user) {
-    return (
-      <div className="bg">
-        <div className="sign-card">
-          <div className="sign-welcome">
-            <h1>Welcome, {user.name}</h1>
-            <span className="sign-role">{user.role}</span>
-            <p className="sign-email">{user.email}</p>
-            <button
-              className="sign-logout-btn"
-              type="button"
-              onClick={() => {
-                logout();
-                navigate("/sign");
-              }}
-            >
-              Log Out
-            </button>
-          </div>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className="bg">
