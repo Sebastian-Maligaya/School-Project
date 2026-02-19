@@ -18,7 +18,8 @@ export default function Navbar() {
   return (
     <nav className="sp-navbar">
       <div className="sp-container">
-        
+
+        {/* Logo & Brand */}
         <div className="sp-branding">
           <div className="sp-logo">
             <img src={logo} alt="SRCC logo" />
@@ -26,14 +27,16 @@ export default function Navbar() {
           <div className="sp-brand">SRCCMSTHS</div>
         </div>
 
+        {/* ✅ Hamburger toggle — between brand and links */}
         <button
-          className="sp-toggle"
+          className={`sp-toggle ${open ? "open" : ""}`}
           aria-label="Toggle navigation"
           onClick={() => setOpen((v) => !v)}
         >
           <span className="sp-hamburger" />
         </button>
 
+        {/* Nav links — "open" class shows them on mobile */}
         <ul className={`sp-links ${open ? "open" : ""}`}>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/admissions">Admissions</Link></li>
@@ -42,7 +45,6 @@ export default function Navbar() {
           <li><Link to="/facilities">Facilities</Link></li>
           <li><Link to="/clubs">Clubs</Link></li>
 
-          {/* Role-specific links */}
           {user?.role === "admin" && (
             <li><Link to="/admin">Admin</Link></li>
           )}
@@ -50,7 +52,6 @@ export default function Navbar() {
             <li><Link to="/teacher">Dashboard</Link></li>
           )}
 
-          {/* Auth links */}
           {user ? (
             <li className="sp-logout-li">
               <button className="sp-logout-btn" onClick={handleLogout}>
@@ -60,11 +61,12 @@ export default function Navbar() {
           ) : (
             <li className="log-in">
               <Link to="/sign">
-              <span className="button-text">Log in</span>
+                <span className="button-text">Log in</span>
               </Link>
             </li>
           )}
         </ul>
+
       </div>
     </nav>
   );

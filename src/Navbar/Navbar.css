@@ -1,59 +1,73 @@
-
-.sp-navbar{
+.sp-navbar {
   --accent: #dc2626;
   --accent-dark: #b91c1c;
   background: #ffffff;
   color: #0f172a;
   border-bottom: 1px solid #e6e9ef;
   position: sticky;
-  top: 0px;
+  top: 0;
   z-index: 1000;
   box-shadow: 0 2px 6px rgba(15,23,42,0.06);
-  
 }
-.sp-container{
 
+.sp-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 1rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding: 1rem 5rem;
+  position: relative;
 }
-.sp-brand{
+
+.sp-branding { display: flex; align-items: center; gap: 0.25rem; }
+.sp-logo { display: flex; align-items: center; }
+.sp-logo img { height: 40px; width: auto; display: block; }
+
+.sp-brand {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: bold;
   letter-spacing: 0.2px;
   color: #1b58e9;
   font-family: 'FONTSPRINGDEMO-TheSeasonsRegular', serif;
-  font-weight: bold;
 }
-.sp-toggle{
+
+/* ── Hamburger: hidden on desktop ── */
+.sp-toggle {
+  display: none;
   background: transparent;
   border: none;
-  color: inherit;
-  display: none;
+  cursor: pointer;
+  padding: 0.3rem;
 }
-.sp-hamburger{
+
+.sp-hamburger {
   width: 22px;
   height: 2px;
   background: #0f172a;
   display: block;
   position: relative;
+  transition: background 0.3s ease;
 }
+
 .sp-hamburger::before,
-.sp-hamburger::after{
+.sp-hamburger::after {
   content: '';
   position: absolute;
   left: 0;
   width: 22px;
   height: 2px;
   background: #0f172a;
+  transition: transform 0.3s ease, top 0.3s ease;
 }
-.sp-hamburger::before{ top: -7px }
-.sp-hamburger::after{ top: 7px }
+.sp-hamburger::before { top: -7px; }
+.sp-hamburger::after  { top:  7px; }
 
-.sp-links{
+/* Animate into X when open */
+.sp-toggle.open .sp-hamburger { background: transparent; }
+.sp-toggle.open .sp-hamburger::before { transform: rotate(45deg);  top: 0; }
+.sp-toggle.open .sp-hamburger::after  { transform: rotate(-45deg); top: 0; }
+
+/* ── Nav links ── */
+.sp-links {
   list-style: none;
   display: flex;
   align-items: center;
@@ -61,21 +75,19 @@
   margin: 0;
   padding: 0;
 }
-.sp-links li a{
- font-size: 16px;
-  color: #555; /* softer gray */
+
+.sp-links li a {
+  font-size: 16px;
+  color: #555;
   text-decoration: none;
-  padding: 0.3rem 0.5rem; /* slightly smaller for cleaner spacing */
-  border-radius: 4px; /* simpler radius */
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
   font-weight: 500;
   font-family: 'Inter', system-ui, sans-serif;
-  transition: background 0.2s ease, color 0.2s ease;
+  transition: color 0.2s ease;
 }
 
-.sp-links li a:hover {
-
-  color: #000;
-}
+.sp-links li a:hover { color: #000; }
 
 .sp-links .log-in {
   display: inline-flex;
@@ -85,118 +97,101 @@
   border-radius: 6px;
   font-size: 14px;
   font-weight: 600;
-  color: #fff;
-  background-color: #5800fa; /* solid minimalist color */
+  background-color: #5800fa;
   transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .sp-links .log-in:hover {
-  background-color: #00b8ff; /* simple hover swap */
-  transform: translateY(-2px); /* subtle lift */
+  background-color: #00b8ff;
+  transform: translateY(-2px);
 }
 
-.button-text{
-  color: #fff;
-}
+.button-text { color: #fff; }
 
-
-/* Click */
-.sp-links .log-in a:active {
-  transform: scale(0.97);
-}
-
-/* small CTA on the navbar (subtle red accent) */
-.Sign{
+.Sign {
   background: var(--accent);
   color: #fff !important;
   padding: 0.35rem 0.65rem;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(220,38,38,0.08);
-}
-.sp-cta:hover{
-  background: var(--accent-dark);
 }
 
-/* Logo sizing and spacing */
-.sp-branding{ display:flex; align-items:center; gap:0.25rem }
-.sp-logo{ display:flex; align-items:center; margin-right:0 }
-.sp-logo img{ height:40px; width:auto; display:block }
-.sp-brand{ margin-left:0 }
-
-/* Responsive */
-@media (max-width: 720px){
-  .sp-toggle{ display: block }
-  .sp-links{
-    
-    position: absolute;
-    right: 1rem;
-    top: 64px;
-    flex-direction: column;
-    background: #ffffff;
-    padding: 0.6rem;
-    border-radius: 8px;
-    display: none;
-    min-width: 180px;
-    box-shadow: 0 6px 20px rgba(15,23,42,0.08);
-    border: 1px solid #eef2f7;
-  }
-  .sp-links.open{ display: flex }
-}
-
-/* Logout button in navbar */
-.sp-logout-li {
-  display: flex;
-  align-items: center;
-}
+.sp-logout-li { display: flex; align-items: center; }
 
 .sp-logout-btn {
   position: relative;
-
   font-size: 14px;
   font-weight: 600;
   font-family: 'Inter', system-ui, sans-serif;
-
   padding: 0.45rem 1.2rem;
   border-radius: 5px;
-
   color: #ffffff;
   background: #dc2626;
   border: 1.5px solid #dc2626;
-
   cursor: pointer;
-  line-height: 1;
   white-space: nowrap;
-
-  box-shadow: 0 0 0 rgba(220, 38, 38, 0);
-  transition:
-    color 0.2s ease,
-    background 0.2s ease,
-    box-shadow 0.2s ease,
-    transform 0.2s ease;
+  transition: transform 0.2s ease;
 }
 
-.sp-logout-btn::before {
-  content: "";
-  position: absolute;
-  inset: -3px;
-  background: rgba(220, 38, 38, 0.35);
-  filter: blur(10px);
-  opacity: 0;
-  z-index: -1;
-  transition: opacity 0.2s ease;
-}
+.sp-logout-btn:hover { transform: translateY(-1px); }
+.sp-logout-btn:active { transform: scale(0.96); }
 
-.sp-logout-btn:hover {
-  background: #dc2626;
-  color: #ffffff;
-  transform: translateY(-1px);
+/* ════════════════════════════
+   MOBILE  ≤ 720px
+════════════════════════════ */
+@media (max-width: 720px) {
 
-}
+  .sp-container {
+    padding: 1rem 1.5rem;
+  }
 
-.sp-logout-btn:hover::before {
-  opacity: 1;
-}
+  /* Show hamburger button */
+  .sp-toggle {
+    display: block;
+  }
 
-.sp-logout-btn:active {
-  transform: scale(0.96);
+  /* Hide links by default on mobile */
+  .sp-links {
+    display: none;
+  }
+
+  /* Dropdown when open */
+  .sp-links.open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    padding: 1rem 1.5rem;
+    gap: 0.3rem;
+    box-shadow: 0 6px 20px rgba(15,23,42,0.08);
+    border-top: 1px solid #eef2f7;
+    border-bottom: 1px solid #eef2f7;
+  }
+
+  .sp-links li { width: 100%; }
+
+  .sp-links li a {
+    display: block;
+    width: 100%;
+    padding: 0.65rem 0.5rem;
+    font-size: 15px;
+  }
+
+  .sp-links .log-in {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    justify-content: center;
+    border-radius: 6px;
+  }
+
+  .sp-logout-li { width: 100%; }
+
+  .sp-logout-btn {
+    width: 100%;
+    padding: 0.65rem 1rem;
+    text-align: center;
+  }
 }
