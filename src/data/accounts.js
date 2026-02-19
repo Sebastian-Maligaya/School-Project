@@ -97,6 +97,14 @@ let accounts = [
     role: "student", 
     section: "ICT-Heron",
   },
+  {
+    id: 9,
+    name:"Misael Gaddi",
+    email: "gaddi@srcc.edu",
+    password: "gaddi123",
+    role: "student",
+    section: "ICT-B",
+  },
 ];
 
 let nextId = 9;
