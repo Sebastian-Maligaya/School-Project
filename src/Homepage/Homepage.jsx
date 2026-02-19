@@ -130,9 +130,7 @@ export default function Homepage() {
               <div className="mv-bottom-content-content">
                 <span className="mv-bottom-content">
                   <h3>RIAN A. LORIEGA</h3>
-                  <h1>Assistant Schools Division Superintendent</h1>
-                  <h2>Officer-In-Charge</h2>
-                  <h2>Office of the School Principal</h2>
+                  <h1>Assistant Principal</h1>
                 </span>
                 <span className="mv-bottom-content-2">
                   <h3>ARTURO A. TOLENTINO</h3>

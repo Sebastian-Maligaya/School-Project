@@ -10,3 +10,10 @@ html, body {
 /* Base font smoothing */
 body { -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale }
 
+/* Desktop scale so 100% browser zoom visually feels closer to ~80% */
+@media (min-width: 1200px) {
+	html {
+		zoom: 0.8;
+	}
+}
+

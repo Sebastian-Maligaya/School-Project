@@ -1,8 +1,7 @@
 .facilities-container {
     width: 100%;
     margin: 0;
-    padding: 0 8.5rem 0;
-    padding-right: 3rem;
+    padding: 0 clamp(1rem, 3vw, 2.5rem);
     box-sizing: border-box;
     background: #f0f4ff;
 }
@@ -252,16 +251,14 @@
 }
 
 
-/* CARD LAYOUT (flex) */
+/* CARD LAYOUT */
 .ground-floor-cards-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     align-items: stretch;
-    justify-content: center;
     gap: 2rem;
-    padding: 2rem 0;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 2rem 0 0;
+    margin: 0;
     transform: translateZ(0);
 }
 
@@ -271,8 +268,8 @@
     overflow: hidden;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    flex: 1 1 320px; /* grow, shrink, base width */
-    max-width: 360px; /* keep reasonable max card width */
+    width: 100%;
+    min-width: 0;
     display: flex;
     flex-direction: column;
 }
@@ -355,7 +352,7 @@
 
 .facilities-layout {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 420px);
   gap: 4rem;
   align-items: start;
   padding: 4rem 0;
@@ -365,6 +362,7 @@
 .facilities-left {
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 
@@ -421,22 +419,14 @@
 }
 
 /* CARD GRID – AUTO ADJUST FOR 1, 2, OR MANY */
-.ground-floor-cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-  padding-bottom: 0rem;
-}
-
-
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .facilities-layout {
     grid-template-columns: 1fr;
+    gap: 2.5rem;
   }
 
   .facilities-right {
-    position: relative  ;
+    position: relative;
     top: 0;
     order: -1;
   }
