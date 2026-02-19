@@ -11,9 +11,9 @@ export const STRANDS = {
 };
 
 // All available sections
-export const SECTIONS = ["STEM-A", "STEM-B", "ICT-A", "ICT-B", "ABM-A", "ABM-B"];
+export const SECTIONS = ["STEM-Haribon", "STEM-Osprey", "STEM-Falcon","STEM-Raven", "ICT-Heron", "ABM-Lawin",];
 
-// Helper: get strand from section name (e.g. "STEM-A" → "STEM")
+// Helper: get strand from section name (e.g. "STEM-Haribon" → "STEM")
 export function getStrandFromSection(section) {
   if (!section) return null;
   return section.split("-")[0];
@@ -39,7 +39,7 @@ let accounts = [
     email: "juan@srcc.edu",
     password: "teacher123",
     role: "teacher",
-    sections: ["STEM-A", "STEM-B"],
+    sections: ["STEM-Haribon", "STEM-Osprey", "STEM-Falcon","STEM-Raven"],
   },
   {
     id: 3,
@@ -47,7 +47,7 @@ let accounts = [
     email: "maria@srcc.edu",
     password: "teacher123",
     role: "teacher",
-    sections: ["ICT-A", "ICT-B"],
+    sections: ["STEM-Haribon", "STEM-Osprey", "STEM-Falcon","STEM-Raven", "ICT-Heron", "ABM-Lawin",],
   },
   {
     id: 4,
@@ -55,7 +55,7 @@ let accounts = [
     email: "pedro@srcc.edu",
     password: "teacher123",
     role: "teacher",
-    sections: ["ABM-A", "ABM-B"],
+    sections: ["ICT-Heron", "ABM-Lawin"],
   },
   {
     id: 5,
@@ -63,7 +63,7 @@ let accounts = [
     email: "anna@srcc.edu",
     password: "student123",
     role: "student",
-    section: "STEM-A",
+    section: "STEM-Osprey",
   },
   {
     id: 6,
@@ -71,7 +71,7 @@ let accounts = [
     email: "carlos@srcc.edu",
     password: "student123",
     role: "student",
-    section: "STEM-A",
+    section: "STEM-Haribon",
   },
   {
     id: 7,
@@ -79,7 +79,7 @@ let accounts = [
     email: "bea@srcc.edu",
     password: "student123",
     role: "student",
-    section: "ICT-A",
+    section: "ICT-Heron",
   },
   {
     id: 8,
@@ -87,7 +87,15 @@ let accounts = [
     email: "miguel@srcc.edu",
     password: "student123",
     role: "student",
-    section: "ABM-A",
+    section: "ABM-Lawin",
+  },
+  {
+    id: 9,
+    name: "Misael Gaddi",
+    email: "gaddi@srcc.edu",
+    password: "gaddi123",
+    role: "student", 
+    section: "ICT-Heron",
   },
   {
     id: 9,

@@ -13,12 +13,12 @@
  
 
 .hp-hero {
-    padding: 4rem 1rem;
-  margin-bottom: 6rem;
+  padding: 4rem 1rem;
+  margin-bottom: 0;
   text-align: center;
 
   background: url('../assets/School_BG2.jpg') center/cover no-repeat;
-  min-height: 760px;
+  min-height: 100svh;
 
   display: flex;
   flex-direction: column;

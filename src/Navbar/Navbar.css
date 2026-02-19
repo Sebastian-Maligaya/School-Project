@@ -18,9 +18,37 @@
   position: relative;
 }
 
-.sp-branding { display: flex; align-items: center; gap: 0.25rem; }
-.sp-logo { display: flex; align-items: center; }
-.sp-logo img { height: 40px; width: auto; display: block; }
+.sp-branding { display: flex; align-items: center; gap: 0.3rem; }
+.sp-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 44px;
+  height: 44px;
+}
+.sp-logo::before {
+  content: "";
+  position: absolute;
+  width: 56%;
+  height: 56%;
+  border-radius: 50%;
+  background: #ffffff;
+  z-index: 0;
+}
+.sp-logo img {
+  height: 44px;
+  width: 44px;
+  object-fit: contain;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+.sp-brand-link {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
 
 .sp-brand {
   font-size: 1.5rem;
@@ -89,6 +117,101 @@
 
 .sp-links li a:hover { color: #000; }
 
+/* Desktop separator dots */
+.sp-links > li {
+  position: relative;
+}
+.sp-links > li:not(:first-child):not(.sp-no-separator)::before {
+  content: "\00B7";
+  position: absolute;
+  left: -0.68rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #a1a1aa;
+  font-size: 1.2rem;
+}
+
+/* Dropdown */
+.sp-dropdown {
+  position: relative;
+}
+
+.sp-dropdown-toggle {
+  font-size: 16px;
+  color: #555;
+  text-decoration: none;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  font-family: 'Inter', system-ui, sans-serif;
+  transition: color 0.2s ease;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.sp-dropdown-toggle:hover {
+  color: #000;
+}
+
+.sp-caret {
+  width: 0.42rem;
+  height: 0.42rem;
+  border-right: 2px solid #4b5563;
+  border-bottom: 2px solid #4b5563;
+  transform: rotate(45deg) translateY(-1px);
+}
+
+.sp-dropdown-menu {
+  list-style: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: -0.35rem;
+  min-width: 280px;
+  margin: 0;
+  padding: 0.9rem 0;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+  display: none;
+  z-index: 1100;
+}
+
+.sp-dropdown-menu li {
+  width: 100%;
+}
+
+.sp-dropdown-menu a {
+  display: block;
+  font-size: 16px;
+  color: #6b7280 !important;
+  font-weight: 700;
+  padding: 0.65rem 1.35rem;
+  text-shadow: none !important;
+  transition: none;
+}
+
+.sp-dropdown-menu a:hover {
+  color: #6b7280 !important;
+  background: #ffffff;
+}
+
+.sp-dropdown-menu a:visited,
+.sp-dropdown-menu a:active,
+.sp-dropdown-menu a:focus {
+  color: #6b7280 !important;
+  text-shadow: none !important;
+}
+
+.sp-dropdown:hover .sp-dropdown-menu,
+.sp-dropdown.open .sp-dropdown-menu {
+  display: block;
+}
+
 .sp-links .log-in {
   display: inline-flex;
   align-items: center;
@@ -134,6 +257,60 @@
 
 .sp-logout-btn:hover { transform: translateY(-1px); }
 .sp-logout-btn:active { transform: scale(0.96); }
+
+/* Homepage top transparent treatment */
+.sp-navbar.is-home {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.sp-navbar.is-home.home-top {
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 23, 42, 0.55),
+    rgba(15, 23, 42, 0.25) 60%,
+    rgba(15, 23, 42, 0)
+  );
+  border-bottom: 0;
+  box-shadow: none;
+}
+
+.sp-navbar.is-home.home-top .sp-brand {
+  color: #ffffff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+}
+
+.sp-navbar.is-home.home-top .sp-links li a,
+.sp-navbar.is-home.home-top .sp-dropdown-toggle {
+  color: rgba(255, 255, 255, 0.94);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+}
+
+.sp-navbar.is-home.home-top .sp-links > li:not(:first-child):not(.sp-no-separator)::before {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.sp-navbar.is-home.home-top .sp-caret {
+  border-right-color: rgba(255, 255, 255, 0.95);
+  border-bottom-color: rgba(255, 255, 255, 0.95);
+}
+
+.sp-navbar.is-home.home-top .sp-dropdown-menu {
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+}
+
+.sp-navbar.is-home.home-top .sp-dropdown-menu a {
+  color: #6b7280;
+  text-shadow: none;
+}
+
+.sp-navbar.is-home.home-top .sp-dropdown-menu a:hover {
+  color: #6b7280;
+  background: #ffffff;
+}
 
 /* ════════════════════════════
    MOBILE  ≤ 720px

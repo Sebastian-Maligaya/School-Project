@@ -12,6 +12,7 @@ import Classes from './Classpage/Classpage.jsx'
 import Calendar from './Classpage/Calendar.jsx' 
 import AdminDashboard from './AdminDashboard/AdminDashboard.jsx'
 import TeacherDashboard from './TeacherDashboard/TeacherDashboard.jsx'
+import OurSchoolPage from './OurSchool/OurSchoolPage.jsx'
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Homepage />} />
+        <Route path='/our-school' element={<OurSchoolPage />} />
+        <Route path='/our-school/:section' element={<OurSchoolPage />} />
         <Route path='/admissions' element={<Admissionpage />} />
         <Route path="/news" element={<Achievements />} />
         <Route path='/facilities' element={<Facilities />} />
